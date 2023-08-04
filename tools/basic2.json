@@ -1,0 +1,246 @@
+{
+  "questions_basiques": [
+    {
+      "question": {
+        "francais": "Qu'est-ce qu'un logiciel ?",
+        "english": "What is software?"
+      },
+      "reponses": {
+        "francais": [
+          {"reponse": "Un logiciel est un ensemble de programmes informatiques qui permettent d'effectuer des tâches spécifiques sur un ordinateur. Il peut être constitué de programmes d'application (comme les traitements de texte, les navigateurs web) ou de programmes système (comme les systèmes d'exploitation).", "points": 2},
+          {"reponse": "Un logiciel est un appareil électronique.", "points": 0},
+          {"reponse": "Un logiciel est un type de matériel informatique.", "points": 0}
+        ],
+        "english": [
+          {"reponse": "Software is a set of computer programs that allow performing specific tasks on a computer. It can consist of application programs (such as word processors, web browsers) or system programs (such as operating systems).", "points": 2},
+          {"reponse": "Software is an electronic device.", "points": 0},
+          {"reponse": "Software is a type of computer hardware.", "points": 0}
+        ]
+      },
+      "explication": {
+        "francais": "Le logiciel est une partie essentielle de l'ordinateur qui permet de réaliser différentes tâches. Il peut être utilisé pour écrire des documents, naviguer sur Internet, jouer à des jeux, gérer des fichiers, etc. Les logiciels sont développés à l'aide de langages de programmation et sont exécutés par le matériel informatique pour effectuer des opérations spécifiques.",
+        "english": "Software is an essential part of the computer that allows performing various tasks. It can be used to write documents, browse the internet, play games, manage files, and more. Software is developed using programming languages and is executed by computer hardware to perform specific operations."
+      }
+    },
+    {
+      "question": {
+        "francais": "Qu'est-ce qu'un virus informatique et comment se propage-t-il ?",
+        "english": "What is a computer virus and how does it spread?"
+      },
+      "reponses": {
+        "francais": [
+          {"reponse": "Un virus informatique est un type de logiciel malveillant qui se reproduit en infectant d'autres fichiers ou programmes sur un ordinateur. Il se propage souvent par le biais de pièces jointes d'e-mails, de téléchargements de logiciels piratés ou de sites web compromis.", "points": 2},
+          {"reponse": "Un virus informatique est un logiciel de protection du système.", "points": 0},
+          {"reponse": "Un virus informatique est un dispositif de stockage de données.", "points": 0}
+        ],
+        "english": [
+          {"reponse": "A computer virus is a type of malicious software that replicates by infecting other files or programs on a computer. It often spreads through email attachments, downloads of pirated software, or compromised websites.", "points": 2},
+          {"reponse": "A computer virus is system protection software.", "points": 0},
+          {"reponse": "A computer virus is a data storage device.", "points": 0}
+        ]
+      },
+      "explication": {
+        "francais": "Un virus informatique est un programme malveillant qui peut se propager rapidement et causer des dommages importants à un ordinateur et à ses fichiers. Il infecte d'autres fichiers ou programmes en s'y attachant et se reproduit lorsqu'un utilisateur exécute ces fichiers ou programmes infectés. Les virus informatiques peuvent se propager via des e-mails infectés, des téléchargements de logiciels à partir de sources non fiables, ou en exploitant des vulnérabilités dans les logiciels installés. Pour se protéger contre les virus, il est important d'utiliser un logiciel antivirus fiable, de télécharger des logiciels à partir de sources officielles et d'être prudent lors de l'ouverture de pièces jointes d'e-mails.",
+        "english": "A computer virus is malicious software that can spread rapidly and cause significant damage to a computer and its files. It infects other files or programs by attaching itself to them and replicates when a user executes those infected files or programs. Computer viruses can spread through infected emails, software downloads from untrusted sources, or by exploiting vulnerabilities in installed software. To protect against viruses, it is important to use reliable antivirus software, download software from official sources, and be cautious when opening email attachments."
+      }
+    },
+    {
+      "question": {
+        "francais": "Qu'est-ce que le téléchargement sécurisé et comment vérifier l'authenticité des fichiers téléchargés ?",
+        "english": "What is secure downloading and how to verify the authenticity of downloaded files?"
+      },
+      "reponses": {
+        "francais": [
+          {"reponse": "Le téléchargement sécurisé consiste à télécharger des fichiers et des logiciels à partir de sources fiables et sécurisées pour éviter les logiciels malveillants. Pour vérifier l'authenticité des fichiers téléchargés, utilisez des sites web officiels ou des plateformes de téléchargement réputées, vérifiez les commentaires et les évaluations des utilisateurs, et assurez-vous que les fichiers sont signés numériquement.", "points": 2},
+          {"reponse": "Le téléchargement sécurisé est un moyen de protéger les fichiers locaux sur un ordinateur.", "points": 0},
+          {"reponse": "Le téléchargement sécurisé est une mesure de protection des réseaux informatiques.", "points": 0}
+        ],
+        "english": [
+          {"reponse": "Secure downloading involves downloading files and software from reliable and secure sources to avoid malware. To verify the authenticity of downloaded files, use official websites or reputable download platforms, check user comments and ratings, and ensure that files are digitally signed.", "points": 2},
+          {"reponse": "Secure downloading is a way to protect local files on a computer.", "points": 0},
+          {"reponse": "Secure downloading is a measure to protect computer networks.", "points": 0}
+        ]
+      },
+      "explication": {
+        "francais": "Le téléchargement sécurisé est une pratique essentielle pour éviter de télécharger des fichiers malveillants ou infectés. Pour télécharger en toute sécurité, utilisez des sites web officiels ou des plateformes de téléchargement bien connues. Évitez de télécharger à partir de sources non vérifiées ou de liens envoyés par e-mail ou messagerie instantanée. Vérifiez également les commentaires et les évaluations des autres utilisateurs pour obtenir des informations sur la fiabilité des fichiers téléchargés. Les fichiers téléchargés à partir de sources fiables sont également souvent signés numériquement pour garantir leur authenticité et leur intégrité.",
+        "english": "Secure downloading is an essential practice to avoid downloading malicious or infected files. To download securely, use official websites or well-known download platforms. Avoid downloading from unverified sources or links sent via email or instant messaging. Also, check user comments and ratings to get information about the reliability of downloaded files. Files downloaded from trusted sources are also often digitally signed to ensure their authenticity and integrity."
+      }
+    },
+    {
+      "question": {
+        "francais": "Qu'est-ce qu'une mise à jour logicielle (patch) et pourquoi est-elle importante ?",
+        "english": "What is a software update (patch) and why is it important?"
+      },
+      "reponses": {
+        "francais": [
+          {"reponse": "Une mise à jour logicielle (patch) est une correction ou une amélioration du logiciel fournie par le développeur pour résoudre des problèmes de sécurité, des bogues ou d'autres problèmes. Elle est importante car les logiciels obsolètes peuvent présenter des vulnérabilités exploitées par les attaquants pour compromettre un système informatique.", "points": 2},
+          {"reponse": "Une mise à jour logicielle (patch) est une fonctionnalité supplémentaire ajoutée à un logiciel.", "points": 0},
+          {"reponse": "Une mise à jour logicielle (patch) est un type de logiciel malveillant.", "points": 0}
+        ],
+        "english": [
+          {"reponse": "A software update (patch) is a correction or improvement of the software provided by the developer to address security issues, bugs, or other problems. It is important because outdated software may have vulnerabilities exploited by attackers to compromise a computer system.", "points": 2},
+          {"reponse": "A software update (patch) is an additional feature added to a software.", "points": 0},
+          {"reponse": "A software update (patch) is a type of malicious software.", "points": 0}
+        ]
+      },
+      "explication": {
+        "francais": "Les mises à jour logicielles (patches) sont des correctifs importants qui permettent de maintenir les logiciels à jour et sécurisés. Les développeurs publient régulièrement des mises à jour pour résoudre les failles de sécurité et les bugs qui pourraient être exploités par des attaquants pour accéder à votre système. Il est essentiel d'installer ces mises à jour dès qu'elles sont disponibles pour protéger votre ordinateur et vos données contre les cybermenaces. De nombreuses attaques informatiques exploitent des vulnérabilités connues dans des logiciels obsolètes, c'est pourquoi les mises à jour régulières sont cruciales pour assurer la sécurité de votre système.",
+        "english": "Software updates (patches) are important fixes that keep software up-to-date and secure. Developers regularly release updates to address security vulnerabilities and bugs that could be exploited by attackers to gain access to your system. It is essential to install these updates as soon as they are available to protect your computer and data from cyber threats. Many cyberattacks exploit known vulnerabilities in outdated software, which is why regular updates are crucial to ensure the security of your system."
+      }
+    },
+    {
+      "question": {
+        "francais": "Qu'est-ce que le courrier électronique (e-mail) et comment l'utiliser en toute sécurité ?",
+        "english": "What is email and how to use it securely?"
+      },
+      "reponses": {
+        "francais": [
+          {"reponse": "Le courrier électronique (e-mail) est un moyen de communication électronique qui permet d'envoyer des messages et des fichiers à d'autres personnes via Internet. Pour l'utiliser en toute sécurité, évitez d'ouvrir des e-mails suspects ou des pièces jointes provenant d'expéditeurs inconnus. Méfiez-vous également des liens dans les e-mails et assurez-vous de vérifier l'adresse de l'expéditeur pour éviter les tentatives de phishing.", "points": 2},
+          {"reponse": "Le courrier électronique (e-mail) est un logiciel antivirus.", "points": 0},
+          {"reponse": "Le courrier électronique (e-mail) est un service de stockage en ligne.", "points": 0}
+        ],
+        "english": [
+          {"reponse": "Email is an electronic communication method that allows sending messages and files to others over the internet. To use it securely, avoid opening suspicious emails or attachments from unknown senders. Also, be cautious of links in emails and make sure to verify the sender's address to avoid phishing attempts.", "points": 2},
+          {"reponse": "Email is antivirus protection software.", "points": 0},
+          {"reponse": "Email is an online storage service.", "points": 0}
+        ]
+      },
+      "explication": {
+        "francais": "Le courrier électronique est un moyen de communication très répandu et pratique. Cependant, il peut être utilisé à des fins malveillantes, comme l'envoi de spams, de messages de phishing ou de logiciels malveillants. Pour l'utiliser en toute sécurité, il est important d'être vigilant et de ne jamais cliquer sur des liens ou des pièces jointes provenant d'expéditeurs inconnus. Les cybercriminels utilisent souvent des e-mails frauduleux pour tromper les utilisateurs et leur faire divulguer des informations sensibles. Vérifiez toujours l'adresse de l'expéditeur et l'authenticité du message avant de fournir des informations ou de cliquer sur des liens.",
+        "english": "Email is a widely used and convenient method of communication. However, it can be used for malicious purposes, such as sending spam, phishing messages, or malware. To use it securely, it is essential to be vigilant and never click on links or attachments from unknown senders. Cybercriminals often use fraudulent emails to deceive users and trick them into disclosing sensitive information. Always verify the sender's address and the authenticity of the message before providing any information or clicking on links."
+      }
+    },
+    {
+      "question": {
+        "francais": "Qu'est-ce qu'un logiciel malveillant (malware) et comment s'en protéger ?",
+        "english": "What is malware and how to protect against it?"
+      },
+      "reponses": {
+        "francais": [
+          {"reponse": "Un logiciel malveillant (malware) est un programme informatique conçu pour nuire à un système informatique ou à voler des données personnelles. Pour s'en protéger, il est essentiel d'installer un bon logiciel antivirus, de maintenir tous les logiciels à jour, d'éviter de télécharger des fichiers provenant de sources non fiables et de ne jamais cliquer sur des liens suspects.", "points": 2},
+          {"reponse": "Un logiciel malveillant (malware) est un logiciel de protection du système.", "points": 0},
+          {"reponse": "Un logiciel malveillant (malware) est un dispositif de stockage de données.", "points": 0}
+        ],
+        "english": [
+          {"reponse": "Malware is a computer program designed to harm a computer system or steal personal data. To protect against it, it is essential to install a good antivirus software, keep all software up to date, avoid downloading files from untrusted sources, and never click on suspicious links.", "points": 2},
+          {"reponse": "Malware is antivirus protection software.", "points": 0},
+          {"reponse": "Malware is a data storage device.", "points": 0}
+        ]
+      },
+      "explication": {
+        "francais": "Les logiciels malveillants (malware) sont une menace courante pour les utilisateurs d'ordinateurs et peuvent causer des dommages importants. Il existe différents types de malware, tels que les virus, les logiciels espions, les ransomwares et les chevaux de Troie. Pour se protéger contre les logiciels malveillants, il est essentiel d'utiliser un logiciel antivirus fiable qui peut détecter et supprimer les programmes malveillants. En outre, il est important de maintenir tous les logiciels à jour pour éviter les failles de sécurité connues. Soyez prudent lorsque vous téléchargez des fichiers et assurez-vous qu'ils proviennent de sources de confiance. Évitez également de cliquer sur des liens dans les e-mails ou les messages instantanés suspects.",
+        "english": "Malware is a common threat to computer users and can cause significant damage. There are different types of malware, such as viruses, spyware, ransomware, and Trojans. To protect against malware, it is essential to use reliable antivirus software that can detect and remove malicious programs. Additionally, it is important to keep all software up to date to avoid known security vulnerabilities. Be cautious when downloading files and make sure they come from trusted sources. Also, avoid clicking on links in suspicious emails or instant messages."
+      }
+    },
+    {
+      "question": {
+        "francais": "Qu'est-ce qu'une sauvegarde (backup) et pourquoi est-elle importante ?",
+        "english": "What is a backup and why is it important?"
+      },
+      "reponses": {
+        "francais": [
+          {"reponse": "Une sauvegarde (backup) est une copie de vos données importantes stockée sur un support externe ou dans le cloud. Elle est importante car elle permet de récupérer vos données en cas de panne matérielle, de suppression accidentelle ou d'attaque de logiciels malveillants.", "points": 2},
+          {"reponse": "Une sauvegarde (backup) est une fonction pour augmenter la vitesse de l'ordinateur.", "points": 0},
+          {"reponse": "Une sauvegarde (backup) est une mesure de sécurité pour protéger un réseau.", "points": 0}
+        ],
+        "english": [
+          {"reponse": "A backup is a copy of your important data stored on an external device or in the cloud. It is important because it allows you to recover your data in case of hardware failure, accidental deletion, or malware attack.", "points": 2},
+          {"reponse": "A backup is a feature to increase computer speed.", "points": 0},
+          {"reponse": "A backup is a security measure to protect a network.", "points": 0}
+        ]
+      },
+      "explication": {
+        "francais": "Une sauvegarde est une mesure essentielle pour assurer la sécurité de vos données. Les pannes de matériel, les erreurs humaines ou les attaques de logiciels malveillants peuvent entraîner la perte de vos fichiers importants. En effectuant régulièrement des sauvegardes, vous pouvez restaurer vos données en cas de problème. Il est recommandé de conserver les sauvegardes sur des supports externes (comme un disque dur externe) ou dans le cloud pour éviter de perdre vos données en cas de sinistre comme un incendie ou un vol. Une sauvegarde régulière est une étape importante pour protéger vos données précieuses et éviter les pertes potentielles de données.",
+        "english": "A backup is an essential measure to ensure the security of your data. Hardware failures, human errors, or malware attacks can result in the loss of your important files. By regularly performing backups, you can restore your data in case of any issues. It is recommended to keep backups on external devices (like an external hard drive) or in the cloud to avoid losing your data in case of disasters such as fire or theft. Regular backup is an important step to protect your valuable data and prevent potential data loss."
+      }
+    },
+    {
+      "question": {
+        "francais": "Qu'est-ce qu'un pare-feu (firewall) et pourquoi est-il important pour la sécurité de l'ordinateur ?",
+        "english": "What is a firewall and why is it important for computer security?"
+      },
+      "reponses": {
+        "francais": [
+          {"reponse": "Un pare-feu (firewall) est un logiciel ou un matériel de sécurité qui contrôle le trafic réseau entrant et sortant d'un ordinateur ou d'un réseau. Il est important pour la sécurité de l'ordinateur car il bloque les communications non autorisées et protège contre les attaques de pirates informatiques et les logiciels malveillants.", "points": 2},
+          {"reponse": "Un pare-feu (firewall) est un périphérique de stockage de données.", "points": 0},
+          {"reponse": "Un pare-feu (firewall) est un logiciel de traitement de texte.", "points": 0}
+        ],
+        "english": [
+          {"reponse": "A firewall is security software or hardware that controls the incoming and outgoing network traffic of a computer or network. It is important for computer security as it blocks unauthorized communications and protects against hackers and malware attacks.", "points": 2},
+          {"reponse": "A firewall is a data storage device.", "points": 0},
+          {"reponse": "A firewall is word processing software.", "points": 0}
+        ]
+      },
+      "explication": {
+        "francais": "Un pare-feu est une barrière de sécurité essentielle entre votre ordinateur ou votre réseau et Internet. Il surveille et contrôle le trafic réseau pour bloquer les tentatives non autorisées d'accès à votre système. Les pare-feux peuvent être basés sur des logiciels ou des appareils matériels dédiés. Ils jouent un rôle crucial dans la prévention des intrusions indésirables et des attaques de pirates informatiques. En bloquant le trafic malveillant, un pare-feu contribue à maintenir votre ordinateur et vos données en sécurité contre les menaces en ligne.",
+        "english": "A firewall is an essential security barrier between your computer or network and the Internet. It monitors and controls network traffic to block unauthorized attempts to access your system. Firewalls can be software-based or dedicated hardware devices. They play a crucial role in preventing unwanted intrusions and hacker attacks. By blocking malicious traffic, a firewall helps keep your computer and data safe from online threats."
+      }
+    },
+    {
+      "question": {
+        "francais": "Qu'est-ce qu'un navigateur web et à quoi sert-il ?",
+        "english": "What is a web browser and what is its purpose?"
+      },
+      "reponses": {
+        "francais": [
+          {"reponse": "Un navigateur web est un logiciel qui permet aux utilisateurs d'accéder à des sites web et de consulter des pages internet. Il sert de passerelle entre l'utilisateur et le World Wide Web (WWW), en interprétant le code des pages web pour les afficher de manière conviviale.", "points": 2},
+          {"reponse": "Un navigateur web est un logiciel de messagerie électronique.", "points": 0},
+          {"reponse": "Un navigateur web est un dispositif de stockage de fichiers en ligne.", "points": 0}
+        ],
+        "english": [
+          {"reponse": "A web browser is software that allows users to access websites and view web pages. It serves as a gateway between the user and the World Wide Web (WWW), interpreting the code of web pages to display them in a user-friendly manner.", "points": 2},
+          {"reponse": "A web browser is email software.", "points": 0},
+          {"reponse": "A web browser is an online file storage device.", "points": 0}
+        ]
+      },
+      "explication": {
+        "francais": "Un navigateur web est un programme essentiel pour accéder à Internet et explorer le World Wide Web. Il interprète le code HTML, CSS et JavaScript des pages web pour afficher du contenu texte, des images, des vidéos, etc. de manière conviviale pour les utilisateurs. Les navigateurs web prennent également en charge les fonctionnalités telles que les onglets, les favoris, les extensions et les moteurs de recherche pour faciliter la navigation sur Internet.",
+        "english": "A web browser is essential software for accessing the Internet and exploring the World Wide Web. It interprets the HTML, CSS, and JavaScript code of web pages to display text, images, videos, etc. in a user-friendly way. Web browsers also support features such as tabs, bookmarks, extensions, and search engines to facilitate web navigation."
+      }
+    },
+    {
+      "question": {
+        "francais": "Qu'est-ce que la navigation privée (mode incognito) et quand l'utiliser ?",
+        "english": "What is private browsing (incognito mode) and when should you use it?"
+      },
+      "reponses": {
+        "francais": [
+          {"reponse": "La navigation privée (mode incognito) est une fonctionnalité proposée par certains navigateurs qui permet de surfer sur Internet sans que les données de navigation (historique, cookies, mots de passe) ne soient enregistrées sur l'ordinateur. Elle devrait être utilisée lorsque vous souhaitez protéger votre vie privée et que vous ne voulez pas que vos activités en ligne soient conservées.", "points": 2},
+          {"reponse": "La navigation privée (mode incognito) est une mesure de sécurité pour protéger l'ordinateur contre les logiciels malveillants.", "points": 0},
+          {"reponse": "La navigation privée (mode incognito) est un moyen d'accéder à des sites web restreints.", "points": 0}
+        ],
+        "english": [
+          {"reponse": "Private browsing (incognito mode) is a feature offered by some browsers that allows you to surf the internet without the browsing data (history, cookies, passwords) being saved on the computer. It should be used when you want to protect your privacy and don't want your online activities to be stored.", "points": 2},
+          {"reponse": "Private browsing (incognito mode) is a security measure to protect the computer against malware.", "points": 0},
+          {"reponse": "Private browsing (incognito mode) is a way to access restricted websites.", "points": 0}
+        ]
+      },
+      "explication": {
+        "francais": "La navigation privée (ou mode incognito) est utile lorsque vous souhaitez naviguer sur Internet sans laisser de traces de votre activité sur l'ordinateur. Lorsque vous utilisez ce mode, votre historique de navigation, les cookies et les mots de passe ne sont pas enregistrés. Cependant, il est important de noter que la navigation privée n'offre pas une protection complète de la vie privée, car votre fournisseur d'accès Internet (FAI) et les sites web que vous visitez peuvent toujours suivre vos activités en ligne. Vous pouvez utiliser ce mode lorsque vous utilisez un ordinateur public ou partagé pour éviter que vos informations personnelles soient accessibles aux autres utilisateurs.",
+        "english": "Private browsing (or incognito mode) is useful when you want to browse the internet without leaving traces of your activity on the computer. When using this mode, your browsing history, cookies, and passwords are not saved. However, it is important to note that private browsing does not offer complete privacy protection, as your Internet Service Provider (ISP) and the websites you visit can still track your online activities. You can use this mode when using a public or shared computer to prevent your personal information from being accessible to other users."
+      }
+    },
+    {
+      "question": {
+        "francais": "Qu'est-ce que le streaming vidéo et comment cela fonctionne-t-il ?",
+        "english": "What is video streaming and how does it work?"
+      },
+      "reponses": {
+        "francais": [
+          {"reponse": "Le streaming vidéo est une méthode de diffusion de vidéos en continu sur Internet. Il fonctionne en envoyant des paquets de données depuis un serveur vers l'appareil de l'utilisateur, qui les affiche progressivement en temps réel. Cela permet de regarder des vidéos sans avoir besoin de les télécharger complètement.", "points": 2},
+          {"reponse": "Le streaming vidéo est un logiciel de montage vidéo.", "points": 0},
+          {"reponse": "Le streaming vidéo est un type de jeu vidéo en ligne.", "points": 0}
+        ],
+        "english": [
+          {"reponse": "Video streaming is a method of delivering videos over the internet in real-time. It works by sending data packets from a server to the user's device, which displays them progressively. This allows watching videos without the need to fully download them.", "points": 2},
+          {"reponse": "Video streaming is video editing software.", "points": 0},
+          {"reponse": "Video streaming is a type of online video game.", "points": 0}
+        ]
+      },
+      "explication": {
+        "francais": "Le streaming vidéo est un moyen populaire de regarder des vidéos en ligne sans avoir à les télécharger complètement sur votre appareil. Lorsque vous regardez une vidéo en streaming, le contenu est envoyé en petits paquets de données depuis le serveur qui l'héberge vers votre appareil (ordinateur, smartphone, tablette). Votre appareil affiche ensuite ces données à mesure qu'elles arrivent, ce qui vous permet de regarder la vidéo en temps réel. Cela signifie que vous n'avez pas besoin de stocker la vidéo localement sur votre appareil, ce qui économise de l'espace de stockage. Le streaming vidéo est largement utilisé par les services de streaming en ligne tels que Netflix, YouTube et Amazon Prime Video.",
+        "english": "Video streaming is a popular way to watch videos online without having to fully download them to your device. When you watch a video via streaming, the content is sent in small data packets from the server hosting it to your device (computer, smartphone, tablet). Your device then displays this data as it arrives, allowing you to watch the video in real-time. This means you don't need to store the video locally on your device, saving storage space. Video streaming is widely used by online streaming services like Netflix, YouTube, and Amazon Prime Video."
+      }
+    }
+  ]
+}

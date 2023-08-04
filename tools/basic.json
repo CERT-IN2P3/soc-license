@@ -1,0 +1,202 @@
+{
+  "questions_basiques": [
+    {
+      "question": {
+        "francais": "Qu'est-ce qu'un virus informatique ?",
+        "english": "What is a computer virus?"
+      },
+      "reponses": {
+        "francais": [
+          {"reponse": "Un virus informatique est un programme malveillant conçu pour se propager d'un ordinateur à un autre et causer des dommages en corrompant ou en détruisant des données.", "points": 2},
+          {"reponse": "Un virus informatique est un outil utilisé par les techniciens pour réparer des ordinateurs.", "points": 0},
+          {"reponse": "Un virus informatique est un logiciel de sécurité pour protéger votre ordinateur.", "points": 0}
+        ],
+        "english": [
+          {"reponse": "A computer virus is a malicious program designed to spread from one computer to another and cause damage by corrupting or destroying data.", "points": 2},
+          {"reponse": "A computer virus is a tool used by technicians to repair computers.", "points": 0},
+          {"reponse": "A computer virus is security software to protect your computer.", "points": 0}
+        ]
+      },
+      "explication": {
+        "francais": "Un virus informatique est un type de logiciel malveillant qui peut être transmis via des fichiers infectés ou des liens malveillants. Une fois qu'il infecte un ordinateur, il peut causer divers problèmes, tels que la corruption de données, le ralentissement du système ou l'accès non autorisé à des informations sensibles.",
+        "english": "A computer virus is a type of malicious software that can be transmitted through infected files or malicious links. Once it infects a computer, it can cause various issues, such as data corruption, system slowdown, or unauthorized access to sensitive information."
+      }
+    },
+    {
+      "question": {
+        "francais": "Qu'est-ce qu'une sauvegarde (backup) ?",
+        "english": "What is a backup?"
+      },
+      "reponses": {
+        "francais": [
+          {"reponse": "Une sauvegarde (backup) est une copie de vos données importantes stockée sur un autre support, comme un disque dur externe ou le cloud, afin de les protéger en cas de perte ou de dommage de votre ordinateur.", "points": 2},
+          {"reponse": "Une sauvegarde (backup) est une mise à jour logicielle pour votre ordinateur.", "points": 0},
+          {"reponse": "Une sauvegarde (backup) est un dispositif matériel ou logiciel pour augmenter la puissance de votre ordinateur.", "points": 0}
+        ],
+        "english": [
+          {"reponse": "A backup is a copy of your important data stored on another medium, such as an external hard drive or the cloud, to protect them in case of loss or damage to your computer.", "points": 2},
+          {"reponse": "A backup is a software update for your computer.", "points": 0},
+          {"reponse": "A backup is a hardware or software device to increase the power of your computer.", "points": 0}
+        ]
+      },
+      "explication": {
+        "francais": "Une sauvegarde (backup) est essentielle pour protéger vos données importantes en cas de panne matérielle, d'attaque de logiciels malveillants ou d'erreur humaine. En créant régulièrement des sauvegardes de vos fichiers, vous pouvez récupérer vos données en cas de problème, ce qui vous évite de les perdre définitivement.",
+        "english": "A backup is crucial to protect your important data in case of hardware failure, malware attack, or human error. By regularly creating backups of your files, you can recover your data in case of issues, preventing permanent loss."
+      }
+    },
+    {
+      "question": {
+        "francais": "Qu'est-ce qu'un logiciel malveillant (malware) ?",
+        "english": "What is malware?"
+      },
+      "reponses": {
+        "francais": [
+          {"reponse": "Un logiciel malveillant (malware) est un programme informatique conçu pour endommager ou voler des informations sur votre ordinateur, tel que des virus, des trojans, des ransomwares, etc.", "points": 2},
+          {"reponse": "Un logiciel malveillant (malware) est un outil pour nettoyer votre disque dur.", "points": 0},
+          {"reponse": "Un logiciel malveillant (malware) est un système de sauvegarde pour vos fichiers.", "points": 0}
+        ],
+        "english": [
+          {"reponse": "Malware is a computer program designed to damage or steal information from your computer, such as viruses, trojans, ransomware, etc.", "points": 2},
+          {"reponse": "Malware is a tool to clean your hard drive.", "points": 0},
+          {"reponse": "Malware is a backup system for your files.", "points": 0}
+        ]
+      },
+      "explication": {
+        "francais": "Les logiciels malveillants (malware) sont des programmes conçus pour nuire à votre ordinateur ou voler vos informations personnelles. Ils peuvent être distribués via des sites web infectés, des e-mails de phishing ou des périphériques infectés. Utiliser un antivirus et des logiciels de sécurité est essentiel pour protéger votre système contre les logiciels malveillants.",
+        "english": "Malware refers to computer programs designed to harm your computer or steal your personal information. They can be distributed through infected websites, phishing emails, or infected devices. Using antivirus and security software is essential to protect your system from malware."
+      }
+    },
+    {
+      "question": {
+        "francais": "Comment sécuriser un mot de passe ?",
+        "english": "How to secure a password?"
+      },
+      "reponses": {
+        "francais": [
+          {"reponse": "Pour sécuriser un mot de passe, utilisez une combinaison de lettres majuscules et minuscules, des chiffres et des caractères spéciaux. Évitez d'utiliser des informations personnelles évidentes, comme votre nom ou votre date de naissance.", "points": 2},
+          {"reponse": "Pour sécuriser un mot de passe, partagez-le avec des amis proches pour qu'ils puissent le sauvegarder.", "points": 0},
+          {"reponse": "Pour sécuriser un mot de passe, écrivez-le sur une note collante et collez-le sur votre ordinateur.", "points": 0}
+        ],
+        "english": [
+          {"reponse": "To secure a password, use a combination of uppercase and lowercase letters, numbers, and special characters. Avoid using obvious personal information, such as your name or birthdate.", "points": 2},
+          {"reponse": "To secure a password, share it with close friends so they can back it up.", "points": 0},
+          {"reponse": "To secure a password, write it on a sticky note and stick it on your computer.", "points": 0}
+        ]
+      },
+      "explication": {
+        "francais": "Pour sécuriser un mot de passe, il est important d'utiliser une combinaison de caractères complexes qui rendent le mot de passe difficile à deviner pour les autres. Évitez d'utiliser des informations personnelles évidentes qui pourraient être facilement associées à vous. De plus, n'écrivez pas votre mot de passe sur des supports physiques qui pourraient être accessibles à d'autres personnes.",
+        "english": "To secure a password, it's important to use a combination of complex characters that make the password difficult for others to guess. Avoid using obvious personal information that could be easily associated with you. Also, do not write your password on physical mediums that could be accessed by others."
+      }
+    },
+    {
+      "question": {
+        "francais": "Comment protéger votre ordinateur contre les logiciels malveillants ?",
+        "english": "How to protect your computer from malware?"
+      },
+      "reponses": {
+        "francais": [
+          {"reponse": "Pour protéger votre ordinateur contre les logiciels malveillants, installez un antivirus et un logiciel de sécurité. Gardez votre système d'exploitation et vos applications à jour avec les dernières mises à jour de sécurité.", "points": 2},
+          {"reponse": "Pour protéger votre ordinateur contre les logiciels malveillants, désactivez votre pare-feu.", "points": 0},
+          {"reponse": "Pour protéger votre ordinateur contre les logiciels malveillants, téléchargez des logiciels depuis des sources non fiables.", "points": 0}
+        ],
+        "english": [
+          {"reponse": "To protect your computer from malware, install antivirus and security software. Keep your operating system and applications up to date with the latest security updates.", "points": 2},
+          {"reponse": "To protect your computer from malware, disable your firewall.", "points": 0},
+          {"reponse": "To protect your computer from malware, download software from unreliable sources.", "points": 0}
+        ]
+      },
+      "explication": {
+        "francais": "Pour protéger votre ordinateur contre les logiciels malveillants, il est essentiel d'installer un antivirus et un logiciel de sécurité fiables. Ces programmes peuvent détecter et bloquer les menaces potentielles. Assurez-vous également de maintenir votre système d'exploitation et vos applications à jour, car les mises à jour de sécurité corrigent souvent des vulnérabilités connues.",
+        "english": "To protect your computer from malware, it is essential to install reliable antivirus and security software. These programs can detect and block potential threats. Also, make sure to keep your operating system and applications up to date, as security updates often fix known vulnerabilities."
+      }
+    },
+    {
+      "question": {
+        "francais": "Pourquoi est-il important de ne pas télécharger des logiciels depuis des sources non fiables ?",
+        "english": "Why is it important not to download software from unreliable sources?"
+      },
+      "reponses": {
+        "francais": [
+          {"reponse": "Il est important de ne pas télécharger des logiciels depuis des sources non fiables car ils pourraient contenir des logiciels malveillants qui infecteraient votre ordinateur.", "points": 2},
+          {"reponse": "Télécharger des logiciels depuis des sources non fiables est sûr car votre antivirus les protégera.", "points": 0},
+          {"reponse": "Il est sûr de télécharger des logiciels depuis n'importe quelle source.", "points": 0}
+        ],
+        "english": [
+          {"reponse": "It is important not to download software from unreliable sources as they may contain malware that would infect your computer.", "points": 2},
+          {"reponse": "Downloading software from unreliable sources is safe because your antivirus will protect you.", "points": 0},
+          {"reponse": "It is safe to download software from any source.", "points": 0}
+        ]
+      },
+      "explication": {
+        "francais": "Télécharger des logiciels depuis des sources non fiables expose votre ordinateur à un risque élevé d'infection par des logiciels malveillants. Les logiciels provenant de sources inconnues peuvent être altérés pour inclure des logiciels malveillants qui endommageront votre système ou voleront vos données. Il est donc préférable de télécharger des logiciels à partir de sources réputées et vérifiées.",
+        "english": "Downloading software from unreliable sources exposes your computer to a high risk of malware infection. Software from unknown sources may be altered to include malicious software that will harm your system or steal your data. Therefore, it is best to download software from reputable and verified sources."
+      }
+    },
+    {
+      "question": {
+        "francais": "Pourquoi est-il important de mettre à jour votre système d'exploitation et vos applications régulièrement ?",
+        "english": "Why is it important to regularly update your operating system and applications?"
+      },
+      "reponses": {
+        "francais": [
+          {"reponse": "Il est important de mettre à jour votre système d'exploitation et vos applications régulièrement pour combler les failles de sécurité connues.", "points": 2},
+          {"reponse": "Mettre à jour votre système d'exploitation et vos applications régulièrement n'a aucune importance.", "points": 0},
+          {"reponse": "Les mises à jour ne sont pas nécessaires car elles peuvent causer des problèmes de compatibilité.", "points": 0}
+        ],
+        "english": [
+          {"reponse": "It is important to regularly update your operating system and applications to patch known security vulnerabilities.", "points": 2},
+          {"reponse": "Regularly updating your operating system and applications is not important.", "points": 0},
+          {"reponse": "Updates are not necessary as they can cause compatibility issues.", "points": 0}
+        ]
+      },
+      "explication": {
+        "francais": "Mettre à jour régulièrement votre système d'exploitation et vos applications est essentiel pour corriger les failles de sécurité connues. Les développeurs publient fréquemment des mises à jour qui corrigent les vulnérabilités identifiées. En maintenant votre système et vos applications à jour, vous réduisez les risques d'exploitation de ces vulnérabilités par des attaquants.",
+        "english": "Regularly updating your operating system and applications is essential to fix known security vulnerabilities. Developers frequently release updates that address identified vulnerabilities. By keeping your system and applications up to date, you reduce the risk of these vulnerabilities being exploited by attackers."
+      }
+    },
+    {
+      "question": {
+        "francais": "Qu'est-ce qu'un pare-feu (firewall) ?",
+        "english": "What is a firewall?"
+      },
+      "reponses": {
+        "francais": [
+          {"reponse": "Un pare-feu (firewall) est un logiciel ou un dispositif matériel qui surveille et contrôle le trafic réseau entrant et sortant de votre ordinateur, agissant comme une barrière de sécurité contre les menaces potentielles.", "points": 2},
+          {"reponse": "Un pare-feu (firewall) est un logiciel utilisé pour augmenter la vitesse de connexion Internet.", "points": 0},
+          {"reponse": "Un pare-feu (firewall) est un programme qui nettoie votre disque dur.", "points": 0}
+        ],
+        "english": [
+          {"reponse": "A firewall is software or a hardware device that monitors and controls incoming and outgoing network traffic on your computer, acting as a security barrier against potential threats.", "points": 2},
+          {"reponse": "A firewall is software used to increase Internet connection speed.", "points": 0},
+          {"reponse": "A firewall is a program that cleans your hard drive.", "points": 0}
+        ]
+      },
+      "explication": {
+        "francais": "Un pare-feu (firewall) est une mesure de sécurité importante qui surveille le trafic réseau et filtre les données pour empêcher l'accès non autorisé à votre système. Il protège votre ordinateur des tentatives d'intrusion et empêche les logiciels malveillants d'envoyer des informations sensibles vers l'extérieur. Un pare-feu joue un rôle essentiel dans la protection de votre ordinateur lorsque vous êtes connecté à Internet.",
+        "english": "A firewall is an important security measure that monitors network traffic and filters data to prevent unauthorized access to your system. It protects your computer from intrusion attempts and prevents malware from sending sensitive information outwards. A firewall plays a crucial role in protecting your computer when you are connected to the Internet."
+      }
+    },
+    {
+      "question": {
+        "francais": "Qu'est-ce qu'une attaque de phishing ?",
+        "english": "What is a phishing attack?"
+      },
+      "reponses": {
+        "francais": [
+          {"reponse": "Une attaque de phishing est une tentative de tromper les utilisateurs en se faisant passer pour une entité légitime afin de leur soutirer des informations sensibles, telles que des mots de passe ou des informations financières.", "points": 2},
+          {"reponse": "Une attaque de phishing est une procédure de sécurité pour protéger votre ordinateur.", "points": 0},
+          {"reponse": "Une attaque de phishing est un outil utilisé par les entreprises pour tester la vulnérabilité de leurs systèmes informatiques.", "points": 0}
+        ],
+        "english": [
+          {"reponse": "A phishing attack is an attempt to deceive users by pretending to be a legitimate entity in order to extract sensitive information from them, such as passwords or financial information.", "points": 2},
+          {"reponse": "A phishing attack is a security procedure to protect your computer.", "points": 0},
+          {"reponse": "A phishing attack is a tool used by companies to test the vulnerability of their computer systems.", "points": 0}
+        ]
+      },
+      "explication": {
+        "francais": "Une attaque de phishing est une méthode courante utilisée par les cybercriminels pour piéger les utilisateurs et obtenir leurs informations personnelles ou financières. Cela se fait généralement via des e-mails ou des sites web frauduleux qui ressemblent à des sites légitimes. Il est essentiel de rester vigilant et de ne jamais cliquer sur des liens suspects ou fournir d'informations sensibles à moins d'être certain de la légitimité de la source.",
+        "english": "A phishing attack is a common method used by cybercriminals to trick users and obtain their personal or financial information. This is typically done through fraudulent emails or websites that look like legitimate sites. It is essential to remain vigilant and never click on suspicious links or provide sensitive information unless certain of the legitimacy of the source."
+      }
+    }
+  ]
+}
