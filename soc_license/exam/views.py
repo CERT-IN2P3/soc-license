@@ -10,7 +10,7 @@ from diploma.diploma import DiplomaCtrl
 
 import json
 
-
+@csrf_exempt
 def index(request):
     result = {
         'status': 'error',
@@ -40,6 +40,8 @@ def index(request):
                 }
     return JsonResponse(result)
 
+
+@csrf_exempt
 def init(request):
     result = {
         'status': 'error',
@@ -50,6 +52,7 @@ def init(request):
     }
     if request.method == 'POST':
         data = json.loads(request.body)
+        print(request.headers)
         if 'score' in request.session:
             result = {
                 'status': 'error',
@@ -101,6 +104,7 @@ def init(request):
     return JsonResponse(result)
 
 
+@csrf_exempt
 def questions(request):
     """
     Method to handle /questions

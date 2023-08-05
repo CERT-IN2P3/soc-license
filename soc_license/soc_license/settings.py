@@ -129,12 +129,14 @@ USE_TZ = True
 
 CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:4000",
+    "http://192.168.1.130:4000",
     "https://ssi.in2p3.fr",
 ]
 CORS_ALLOW_CREDENTIALS = True
 
 CSRF_TRUSTED_ORIGINS = [
     'http://127.0.0.1:4000',
+    "http://192.168.1.130:4000",
     'https://ssi.in2p3.fr',
 ]
 
