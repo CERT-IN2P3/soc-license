@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt, ensure_csrf_cookie
+from django.middleware.csrf import get_token
 
 
 @ensure_csrf_cookie
@@ -18,4 +19,4 @@ def csrf(request):
 
     :param request: full HTTP request from user
     """
-    return JsonResponse(dict())
+    return JsonResponse({'csrf': get_token(request)})
