@@ -142,7 +142,7 @@ def questions(request):
                     diploma.file()
                     diploma.sha512sum()
                     request.session['uuid'] = diploma.uuid
-                result['uuid'] = '{filename}'.format(filename=diploma.uuid)
+                result['uuid'] = '{uuid}'.format(uuid=request.session['uuid'])
         else:
             if request.session['score'] < SOC_LICENSE['threshold']['basic']:
                 level = 'basic'
