@@ -136,10 +136,12 @@ def questions(request):
                 result['status'] = 'error'
             else:
                 result['status'] = 'success'
-                diploma = DiplomaCtrl(session=request.session)
-                diploma.sign()
-                diploma.file()
-                diploma.sha512sum()
+                if 'uuid' not in request.session:
+                    diploma = DiplomaCtrl(session=request.session)
+                    diploma.sign()
+                    diploma.file()
+                    diploma.sha512sum()
+                    request.session['uuid'] = diploma.uuid
                 result['uuid'] = '{filename}'.format(filename=diploma.uuid)
         else:
             if request.session['score'] < SOC_LICENSE['threshold']['basic']:
