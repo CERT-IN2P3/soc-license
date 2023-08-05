@@ -13,7 +13,7 @@ class SocLicenseDiploma {
   sha512sum() {
     var self = this;
     return $.ajax({
-      url: this.url + 'diplomas/' + $('#soc-license-diploma-uuid').val(),
+      url: this.url + 'diplomas/' + $('#soc-license-diploma-uuid').val() + '?format=sha512sum',
       type: 'GET',
       crossDomain: true,
       dataType: 'json',

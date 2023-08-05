@@ -14,27 +14,33 @@ def diploma_view(request, diploma):
         'message': 'diploma error: get unexcepted behavior'
     }
     if request.method == 'GET':
+        if 'format' in request.GET:
+            response_format = request.GET['format']
+        else:
+            response_format = 'pdf'
         try:
-            with open('./diplomas/{}.pdf'.format(diploma), 'rb') as pdf:
-                response = HttpResponse(pdf.read())
-                response['Content-Disposition'] = 'inline;filename={}.pdf'.format(diploma)
-                return HttpResponse(response.content,
-                                    content_type='application/pdf')
-            pdf.closed
-        except FileNotFoundError:
+            sha512sum = Diploma.objects.get(uuid=diploma)
+            result = {
+                'status': 'success',
+                'uuid': diploma,
+                'sha512sum': sha512sum.sha512sum
+            }
+        except Diploma.DoesNotExist:
+            result = {
+                'status': 'failed',
+                'uuid': diploma,
+                'message': 'No diploma found with uuid: {uuid}'.format(uuid=diploma)
+            }
+        if response_format == 'pdf':
             try:
-                sha512sum = Diploma.objects.get(uuid=diploma)
-                result = {
-                    'status': 'success',
-                    'uuid': diploma,
-                    'sha512sum': sha512sum.sha512sum
-                }
-            except Diploma.DoesNotExist:
-                result = {
-                    'status': 'failed',
-                    'uuid': diploma,
-                    'message': 'No diploma found with uuid: {uuid}'.format(uuid=diploma)
-                }
+                with open('./diplomas/{}.pdf'.format(diploma), 'rb') as pdf:
+                    response = HttpResponse(pdf.read())
+                    response['Content-Disposition'] = 'inline;filename={}.pdf'.format(diploma)
+                    return HttpResponse(response.content,
+                                        content_type='application/pdf')
+                pdf.closed
+            except FileNotFoundError:
+                pass
     return JsonResponse(result)
 
 
