@@ -1,6 +1,7 @@
 from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponse, JsonResponse
 from diploma.models import Diploma
+from soc_license.settings import SOC_LICENSE
 
 from diploma.diploma import DiplomaCtrl
 
@@ -33,7 +34,9 @@ def diploma_view(request, diploma):
             }
         if response_format == 'pdf':
             try:
-                with open('./diplomas/{}.pdf'.format(diploma), 'rb') as pdf:
+                with open('{basedir}/{uuid}.pdf'.format(
+                        basedir=SOC_LICENSE['diploma'],
+                        uuid=diploma), 'rb') as pdf:
                     response = HttpResponse(pdf.read())
                     response['Content-Disposition'] = 'inline;filename={}.pdf'.format(diploma)
                     return HttpResponse(response.content,

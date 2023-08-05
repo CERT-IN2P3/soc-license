@@ -120,12 +120,12 @@ class DiplomaCtrl(object):
                             w=50,
                             border=0,
                             align='L')
-        self.pdf.output("./diplomas/{pdfname}.pdf".format(pdfname=self.uuid))
+        self.pdf.output("{basedir}/{uuid}.pdf".format(basedir=SOC_LICENSE['diploma'], uuid=self.uuid))
 
     def sha512sum(self):
         sha512 = hashlib.sha512(
-            open("./diplomas/{pdfname}.pdf".format(pdfname=self.uuid), 'rb').read()).hexdigest()
-        sha512_file = open("./diplomas/{pdfname}.sha512".format(pdfname=self.uuid), 'w')
+            open("{basedir}/{uuid}.pdf".format(basedir=SOC_LICENSE['diploma'], uuid=self.uuid), 'rb').read()).hexdigest()
+        sha512_file = open("{basedir}/{uuid}.sha512".format(basedir=SOC_LICENSE['diploma'], uuid=self.uuid), 'w')
         sha512_file.write("{sha512}\n".format(sha512=sha512))
         sha512_file.close()
         diploma = Diploma.objects.create(uuid=self.uuid, sha512sum=sha512)

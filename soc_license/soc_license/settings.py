@@ -36,7 +36,8 @@ SOC_LICENSE = {
         'basic': 14,
         'advanced': 18,
         'expert': 20
-    }
+    },
+    'diploma': BASE_DIR / "data/diplomas"
 }
 
 # Application definition
@@ -92,7 +93,7 @@ WSGI_APPLICATION = "soc_license.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        "NAME": BASE_DIR / "data/db.sqlite3",
     }
 }
 
