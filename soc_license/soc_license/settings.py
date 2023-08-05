@@ -129,27 +129,26 @@ USE_I18N = True
 USE_TZ = True
 
 CORS_ALLOWED_ORIGINS = [
+    "http://localhost:4000",
     "http://127.0.0.1:4000",
-    "http://192.168.1.130:4000",
-    "https://ssi.in2p3.fr",
 ]
+
 CORS_ALLOW_CREDENTIALS = True
 
-CSRF_TRUSTED_ORIGINS = [
-    'http://127.0.0.1:4000',
-    "http://192.168.1.130:4000",
-    'https://ssi.in2p3.fr',
-]
-
 CORS_ORIGIN_WHITELIST = (
-    'http://127.0.0.1:8000',
-    'https://ssi.in2p3.fr',
+    'http://127.0.0.1:4000',
 )
+
+
+CSRF_TRUSTED_ORIGINS = [
+    'http://localhost:4000',
+]
 
 CSRF_COOKIE_SECURE = True
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SAMESITE = 'None'
 SESSION_COOKIE_SAMESITE = 'None'
+CSRF_USE_SESSIONS = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/

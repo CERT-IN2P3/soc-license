@@ -10,7 +10,7 @@ from diploma.diploma import DiplomaCtrl
 
 import json
 
-@csrf_exempt
+
 def index(request):
     result = {
         'status': 'error',
@@ -41,7 +41,6 @@ def index(request):
     return JsonResponse(result)
 
 
-@csrf_exempt
 def init(request):
     result = {
         'status': 'error',
@@ -104,7 +103,6 @@ def init(request):
     return JsonResponse(result)
 
 
-@csrf_exempt
 def questions(request):
     """
     Method to handle /questions
@@ -156,7 +154,6 @@ def questions(request):
     return JsonResponse(result)
 
 
-@csrf_exempt
 def answer(request, question):
     result = {
         'status': 'error',
