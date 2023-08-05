@@ -74,6 +74,9 @@ def init(request):
             result = {
                 'stage': 'question',
                 'status': 'success',
+                'basic': SOC_LICENSE['threshold']['basic'],
+                'advanced': SOC_LICENSE['threshold']['advanced'],
+                'expert': SOC_LICENSE['threshold']['expert'],
                 'message': 'session started for {firstname} {lastname}'.format(
                     firstname=data['firstname'],
                     lastname=data['lastname']
@@ -129,19 +132,25 @@ def questions(request):
                 'lastname': request.session['lastname'],
                 'score': request.session['score'],
             }
-            if request.session['score'] < SOC_LICENSE['threshold']['bronze']:
+            if request.session['score'] < SOC_LICENSE['threshold']['basic']:
                 result['status'] = 'error'
             else:
                 result['status'] = 'success'
                 diploma = DiplomaCtrl(session=request.session)
-                print(diploma)
                 diploma.sign()
                 diploma.file()
                 diploma.sha512sum()
                 result['uuid'] = '{filename}'.format(filename=diploma.uuid)
         else:
+            if request.session['score'] < SOC_LICENSE['threshold']['basic']:
+                level = 'basic'
+            elif request.session['score'] < SOC_LICENSE['threshold']['advanced']:
+                level = 'advanced'
+            else:
+                level = 'expert'
             result = Question.random(used=request.session['questions'],
-                                     lang=request.session['lang'])
+                                     lang=request.session['lang'],
+                                     level=level)
     return JsonResponse(result)
 
 

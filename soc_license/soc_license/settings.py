@@ -30,12 +30,12 @@ ALLOWED_HOSTS = [
 ]
 
 SOC_LICENSE = {
-    'length': 1,
+    'length': 10,
     'baseurl': 'uuid://127.0.0.1:8000/',
     'threshold': {
-        'bronze': 2,
-        'silver': 18,
-        'gold': 20
+        'basic': 14,
+        'advanced': 18,
+        'expert': 20
     }
 }
 

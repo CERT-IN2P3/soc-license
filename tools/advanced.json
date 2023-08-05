@@ -2,222 +2,222 @@
   "questions_avancees": [
     {
       "question": {
-        "francais": "Qu'est-ce qu'une attaque par déni de service (DDoS) ?",
-        "english": "What is a Denial of Service (DDoS) attack?"
+        "fr": "Qu'est-ce qu'une attaque par déni de service (DDoS) ?",
+        "en": "What is a Denial of Service (DDoS) attack?"
       },
       "reponses": {
-        "francais": [
+        "fr": [
           {"reponse": "Une attaque par déni de service (DDoS) est une tentative malveillante visant à rendre un service ou un site web indisponible en submergeant les serveurs cibles avec un trafic excessif.", "points": 2},
           {"reponse": "Une attaque par déni de service (DDoS) est une mesure de sécurité pour protéger un serveur contre les accès non autorisés.", "points": 0},
           {"reponse": "Une attaque par déni de service (DDoS) est une action pour améliorer les performances du réseau.", "points": 0}
         ],
-        "english": [
+        "en": [
           {"reponse": "A Denial of Service (DDoS) attack is a malicious attempt to make a service or website unavailable by overwhelming the target servers with excessive traffic.", "points": 2},
           {"reponse": "A Denial of Service (DDoS) attack is a security measure to protect a server against unauthorized access.", "points": 0},
           {"reponse": "A Denial of Service (DDoS) attack is an action to improve network performance.", "points": 0}
         ]
       },
       "explication": {
-        "francais": "Une attaque par déni de service (DDoS) vise à perturber ou à rendre inutilisable un service en surchargeant les ressources du serveur cible avec un grand nombre de requêtes. Ces attaques sont souvent effectuées à l'aide d'un réseau de machines compromises appelé botnet. Les attaques DDoS peuvent être utilisées pour des motifs divers, y compris pour extorquer de l'argent ou pour exprimer un mécontentement.",
-        "english": "A Denial of Service (DDoS) attack aims to disrupt or render a service unusable by overloading the resources of the target server with a large number of requests. These attacks are often carried out using a network of compromised machines called a botnet. DDoS attacks can be used for various motives, including extortion or expressing discontent."
+        "fr": "Une attaque par déni de service (DDoS) vise à perturber ou à rendre inutilisable un service en surchargeant les ressources du serveur cible avec un grand nombre de requêtes. Ces attaques sont souvent effectuées à l'aide d'un réseau de machines compromises appelé botnet. Les attaques DDoS peuvent être utilisées pour des motifs divers, y compris pour extorquer de l'argent ou pour exprimer un mécontentement.",
+        "en": "A Denial of Service (DDoS) attack aims to disrupt or render a service unusable by overloading the resources of the target server with a large number of requests. These attacks are often carried out using a network of compromised machines called a botnet. DDoS attacks can be used for various motives, including extortion or expressing discontent."
       }
     },
     {
       "question": {
-        "francais": "Qu'est-ce qu'une attaque de force brute ?",
-        "english": "What is a brute-force attack?"
+        "fr": "Qu'est-ce qu'une attaque de force brute ?",
+        "en": "What is a brute-force attack?"
       },
       "reponses": {
-        "francais": [
+        "fr": [
           {"reponse": "Une attaque de force brute est une technique utilisée pour trouver un mot de passe en essayant toutes les combinaisons possibles jusqu'à ce que la bonne soit trouvée.", "points": 2},
           {"reponse": "Une attaque de force brute est une mesure de sécurité pour renforcer un pare-feu.", "points": 0},
           {"reponse": "Une attaque de force brute est un moyen de sauvegarder des données importantes.", "points": 0}
         ],
-        "english": [
+        "en": [
           {"reponse": "A brute-force attack is a technique used to find a password by trying all possible combinations until the correct one is found.", "points": 2},
           {"reponse": "A brute-force attack is a security measure to strengthen a firewall.", "points": 0},
           {"reponse": "A brute-force attack is a way to back up important data.", "points": 0}
         ]
       },
       "explication": {
-        "francais": "Une attaque de force brute est une méthode de piratage où l'attaquant essaie toutes les combinaisons possibles de caractères, généralement pour deviner un mot de passe. Cette attaque peut être efficace pour les mots de passe faibles, mais elle peut être très lente pour les mots de passe plus complexes. Pour se protéger contre les attaques de force brute, il est essentiel d'utiliser des mots de passe forts et un mécanisme de verrouillage de compte après un certain nombre de tentatives infructueuses.",
-        "english": "A brute-force attack is a hacking method where the attacker tries all possible combinations of characters, usually to guess a password. This attack can be effective against weak passwords but can be very slow for more complex passwords. To protect against brute-force attacks, it is essential to use strong passwords and account lockout mechanisms after a certain number of unsuccessful attempts."
+        "fr": "Une attaque de force brute est une méthode de piratage où l'attaquant essaie toutes les combinaisons possibles de caractères, généralement pour deviner un mot de passe. Cette attaque peut être efficace pour les mots de passe faibles, mais elle peut être très lente pour les mots de passe plus complexes. Pour se protéger contre les attaques de force brute, il est essentiel d'utiliser des mots de passe forts et un mécanisme de verrouillage de compte après un certain nombre de tentatives infructueuses.",
+        "en": "A brute-force attack is a hacking method where the attacker tries all possible combinations of characters, usually to guess a password. This attack can be effective against weak passwords but can be very slow for more complex passwords. To protect against brute-force attacks, it is essential to use strong passwords and account lockout mechanisms after a certain number of unsuccessful attempts."
       }
     },
     {
       "question": {
-        "francais": "Qu'est-ce qu'une authentification à deux facteurs (2FA) ?",
-        "english": "What is Two-Factor Authentication (2FA)?"
+        "fr": "Qu'est-ce qu'une authentification à deux facteurs (2FA) ?",
+        "en": "What is Two-Factor Authentication (2FA)?"
       },
       "reponses": {
-        "francais": [
+        "fr": [
           {"reponse": "L'authentification à deux facteurs (2FA) est un mécanisme de sécurité qui demande à l'utilisateur de fournir deux formes d'identification différentes avant d'accéder à un compte, généralement un mot de passe et un code envoyé sur son téléphone ou un appareil de confiance.", "points": 2},
           {"reponse": "L'authentification à deux facteurs (2FA) est un type d'attaque informatique.", "points": 0},
           {"reponse": "L'authentification à deux facteurs (2FA) est un moyen de créer des sauvegardes de données.", "points": 0}
         ],
-        "english": [
+        "en": [
           {"reponse": "Two-Factor Authentication (2FA) is a security mechanism that requires the user to provide two different forms of identification before accessing an account, typically a password and a code sent to their phone or trusted device.", "points": 2},
           {"reponse": "Two-Factor Authentication (2FA) is a type of computer attack.", "points": 0},
           {"reponse": "Two-Factor Authentication (2FA) is a way to create data backups.", "points": 0}
         ]
       },
       "explication": {
-        "francais": "L'authentification à deux facteurs (2FA) renforce la sécurité en demandant à l'utilisateur de fournir une deuxième preuve d'identité, outre le mot de passe, avant d'accéder à un compte. Cette deuxième forme d'identification peut être un code unique envoyé par SMS, une application d'authentification ou un appareil de confiance. Ainsi, même si un attaquant parvient à obtenir le mot de passe, il aura toujours besoin de la deuxième forme d'authentification pour accéder au compte.",
-        "english": "Two-Factor Authentication (2FA) enhances security by requiring the user to provide a second proof of identity, in addition to the password, before accessing an account. This second form of identification can be a unique code sent via SMS, an authentication app, or a trusted device. Thus, even if an attacker manages to obtain the password, they will still need the second form of authentication to access the account."
+        "fr": "L'authentification à deux facteurs (2FA) renforce la sécurité en demandant à l'utilisateur de fournir une deuxième preuve d'identité, outre le mot de passe, avant d'accéder à un compte. Cette deuxième forme d'identification peut être un code unique envoyé par SMS, une application d'authentification ou un appareil de confiance. Ainsi, même si un attaquant parvient à obtenir le mot de passe, il aura toujours besoin de la deuxième forme d'authentification pour accéder au compte.",
+        "en": "Two-Factor Authentication (2FA) enhances security by requiring the user to provide a second proof of identity, in addition to the password, before accessing an account. This second form of identification can be a unique code sent via SMS, an authentication app, or a trusted device. Thus, even if an attacker manages to obtain the password, they will still need the second form of authentication to access the account."
       }
     },
     {
       "question": {
-        "francais": "Qu'est-ce qu'un ransomware ?",
-        "english": "What is ransomware?"
+        "fr": "Qu'est-ce qu'un ransomware ?",
+        "en": "What is ransomware?"
       },
       "reponses": {
-        "francais": [
+        "fr": [
           {"reponse": "Un ransomware est un type de logiciel malveillant qui bloque l'accès à vos fichiers ou à votre système, puis demande une rançon pour restaurer l'accès.", "points": 2},
           {"reponse": "Un ransomware est un logiciel de sécurité pour protéger votre ordinateur.", "points": 0},
           {"reponse": "Un ransomware est un outil pour améliorer les performances de votre ordinateur.", "points": 0}
         ],
-        "english": [
+        "en": [
           {"reponse": "Ransomware is a type of malicious software that blocks access to your files or system and demands a ransom to restore access.", "points": 2},
           {"reponse": "Ransomware is security software to protect your computer.", "points": 0},
           {"reponse": "Ransomware is a tool to improve your computer's performance.", "points": 0}
         ]
       },
       "explication": {
-        "francais": "Le ransomware est un type de logiciel malveillant qui chiffre les fichiers sur votre ordinateur, rendant ainsi leur accès impossible sans la clé de déchiffrement. Les auteurs du ransomware exigent ensuite le paiement d'une rançon en échange de la clé permettant de restaurer l'accès aux fichiers. Il est essentiel de prévenir les infections de ransomware en maintenant un logiciel de sécurité à jour et en évitant de télécharger des fichiers suspects ou de cliquer sur des liens non vérifiés.",
-        "english": "Ransomware is a type of malicious software that encrypts files on your computer, making them inaccessible without the decryption key. The authors of the ransomware then demand payment of a ransom in exchange for the key to restore access to the files. Preventing ransomware infections is crucial by keeping security software up to date and avoiding downloading suspicious files or clicking on unverified links."
+        "fr": "Le ransomware est un type de logiciel malveillant qui chiffre les fichiers sur votre ordinateur, rendant ainsi leur accès impossible sans la clé de déchiffrement. Les auteurs du ransomware exigent ensuite le paiement d'une rançon en échange de la clé permettant de restaurer l'accès aux fichiers. Il est essentiel de prévenir les infections de ransomware en maintenant un logiciel de sécurité à jour et en évitant de télécharger des fichiers suspects ou de cliquer sur des liens non vérifiés.",
+        "en": "Ransomware is a type of malicious software that encrypts files on your computer, making them inaccessible without the decryption key. The authors of the ransomware then demand payment of a ransom in exchange for the key to restore access to the files. Preventing ransomware infections is crucial by keeping security software up to date and avoiding downloading suspicious files or clicking on unverified links."
       }
     },
     {
       "question": {
-        "francais": "Qu'est-ce qu'une faille de sécurité (vulnérabilité) zero-day ?",
-        "english": "What is a zero-day security vulnerability?"
+        "fr": "Qu'est-ce qu'une faille de sécurité (vulnérabilité) zero-day ?",
+        "en": "What is a zero-day security vulnerability?"
       },
       "reponses": {
-        "francais": [
+        "fr": [
           {"reponse": "Une faille de sécurité zero-day est une vulnérabilité de sécurité qui est exploitée par les pirates avant qu'un correctif ne soit disponible, donnant ainsi aux développeurs zéro jour pour la réparation.", "points": 2},
           {"reponse": "Une faille de sécurité zero-day est une mesure de sécurité pour protéger votre ordinateur.", "points": 0},
           {"reponse": "Une faille de sécurité zero-day est un type d'attaque par déni de service.", "points": 0}
         ],
-        "english": [
+        "en": [
           {"reponse": "A zero-day security vulnerability is a security flaw that is exploited by hackers before a patch is available, giving developers zero days to fix it.", "points": 2},
           {"reponse": "A zero-day security vulnerability is a security measure to protect your computer.", "points": 0},
           {"reponse": "A zero-day security vulnerability is a type of Denial of Service (DDoS) attack.", "points": 0}
         ]
       },
       "explication": {
-        "francais": "Une faille de sécurité zero-day est une vulnérabilité de sécurité qui est exploitée par des attaquants avant que les développeurs n'aient eu l'occasion de la corriger. Le terme 'zero-day' signifie que les développeurs n'ont eu aucun jour (zéro jour) pour réagir et publier un correctif. Ces vulnérabilités sont particulièrement dangereuses car elles permettent aux attaquants de cibler des systèmes sans défense jusqu'à ce qu'un correctif soit disponible.",
-        "english": "A zero-day security vulnerability is a security flaw that is exploited by attackers before developers have had a chance to fix it. The term 'zero-day' means developers have had zero days to respond and release a patch. These vulnerabilities are particularly dangerous as they allow attackers to target defenseless systems until a patch becomes available."
+        "fr": "Une faille de sécurité zero-day est une vulnérabilité de sécurité qui est exploitée par des attaquants avant que les développeurs n'aient eu l'occasion de la corriger. Le terme 'zero-day' signifie que les développeurs n'ont eu aucun jour (zéro jour) pour réagir et publier un correctif. Ces vulnérabilités sont particulièrement dangereuses car elles permettent aux attaquants de cibler des systèmes sans défense jusqu'à ce qu'un correctif soit disponible.",
+        "en": "A zero-day security vulnerability is a security flaw that is exploited by attackers before developers have had a chance to fix it. The term 'zero-day' means developers have had zero days to respond and release a patch. These vulnerabilities are particularly dangerous as they allow attackers to target defenseless systems until a patch becomes available."
       }
     },
     {
       "question": {
-        "francais": "Qu'est-ce qu'une attaque par hameçonnage (phishing) ciblé ?",
-        "english": "What is a targeted phishing attack?"
+        "fr": "Qu'est-ce qu'une attaque par hameçonnage (phishing) ciblé ?",
+        "en": "What is a targeted phishing attack?"
       },
       "reponses": {
-        "francais": [
+        "fr": [
           {"reponse": "Une attaque par hameçonnage ciblé est une forme d'attaque de phishing sophistiquée visant des individus ou des organisations spécifiques pour voler des informations sensibles.", "points": 2},
           {"reponse": "Une attaque par hameçonnage ciblé est une mesure de sécurité pour protéger un réseau informatique.", "points": 0},
           {"reponse": "Une attaque par hameçonnage ciblé est une action pour augmenter la capacité de stockage d'un ordinateur.", "points": 0}
         ],
-        "english": [
+        "en": [
           {"reponse": "A targeted phishing attack is a form of sophisticated phishing attack aimed at specific individuals or organizations to steal sensitive information.", "points": 2},
           {"reponse": "A targeted phishing attack is a security measure to protect a computer network.", "points": 0},
           {"reponse": "A targeted phishing attack is an action to increase computer storage capacity.", "points": 0}
         ]
       },
       "explication": {
-        "francais": "Une attaque par hameçonnage ciblé est une variante du phishing qui vise des individus ou des organisations spécifiques. Les attaquants effectuent des recherches approfondies sur leurs cibles pour personnaliser les messages de phishing et les rendre plus convaincants. Ils peuvent utiliser des informations réelles, telles que des noms, des titres de poste ou des affiliations, pour inciter les victimes à divulguer des informations sensibles, telles que des mots de passe ou des identifiants financiers. Une vigilance accrue et une formation en matière de sécurité sont essentielles pour se protéger contre les attaques par hameçonnage ciblé.",
-        "english": "A targeted phishing attack is a variant of phishing that targets specific individuals or organizations. Attackers conduct in-depth research on their targets to customize phishing messages and make them more convincing. They may use real information, such as names, job titles, or affiliations, to entice victims into divulging sensitive information, such as passwords or financial credentials. Increased vigilance and security training are essential to protect against targeted phishing attacks."
+        "fr": "Une attaque par hameçonnage ciblé est une variante du phishing qui vise des individus ou des organisations spécifiques. Les attaquants effectuent des recherches approfondies sur leurs cibles pour personnaliser les messages de phishing et les rendre plus convaincants. Ils peuvent utiliser des informations réelles, telles que des noms, des titres de poste ou des affiliations, pour inciter les victimes à divulguer des informations sensibles, telles que des mots de passe ou des identifiants financiers. Une vigilance accrue et une formation en matière de sécurité sont essentielles pour se protéger contre les attaques par hameçonnage ciblé.",
+        "en": "A targeted phishing attack is a variant of phishing that targets specific individuals or organizations. Attackers conduct in-depth research on their targets to customize phishing messages and make them more convincing. They may use real information, such as names, job titles, or affiliations, to entice victims into divulging sensitive information, such as passwords or financial credentials. Increased vigilance and security training are essential to protect against targeted phishing attacks."
       }
     },
     {
       "question": {
-        "francais": "Qu'est-ce qu'un logiciel espion (spyware) et comment s'en protéger ?",
-        "english": "What is spyware and how to protect against it?"
+        "fr": "Qu'est-ce qu'un logiciel espion (spyware) et comment s'en protéger ?",
+        "en": "What is spyware and how to protect against it?"
       },
       "reponses": {
-        "francais": [
+        "fr": [
           {"reponse": "Un logiciel espion (spyware) est un type de logiciel malveillant qui surveille et enregistre les activités de l'utilisateur sans son consentement, telles que les frappes au clavier, les sites web visités et les messages envoyés. Pour se protéger contre le spyware, utilisez un bon logiciel de sécurité et évitez de télécharger des logiciels depuis des sources non fiables.", "points": 2},
           {"reponse": "Un logiciel espion (spyware) est un outil légitime utilisé par les entreprises pour surveiller leurs employés.", "points": 0},
           {"reponse": "Un logiciel espion (spyware) est une procédure pour améliorer la vitesse d'Internet.", "points": 0}
         ],
-        "english": [
+        "en": [
           {"reponse": "Spyware is a type of malicious software that monitors and records the user's activities without their consent, such as keystrokes, visited websites, and sent messages. To protect against spyware, use good security software and avoid downloading software from unreliable sources.", "points": 2},
           {"reponse": "Spyware is a legitimate tool used by companies to monitor their employees.", "points": 0},
           {"reponse": "Spyware is a procedure to improve Internet speed.", "points": 0}
         ]
       },
       "explication": {
-        "francais": "Le logiciel espion (spyware) est un type de logiciel malveillant conçu pour surveiller discrètement les activités de l'utilisateur et transmettre ces informations à des tiers, généralement à des fins publicitaires ou pour voler des données personnelles. Pour se protéger contre le spyware, il est essentiel d'utiliser un logiciel de sécurité fiable qui peut détecter et supprimer les programmes espions. De plus, évitez de télécharger des logiciels depuis des sources non fiables, car les logiciels espions peuvent être dissimulés dans des applications illégitimes.",
-        "english": "Spyware is a type of malicious software designed to discreetly monitor the user's activities and transmit this information to third parties, usually for advertising purposes or to steal personal data. To protect against spyware, it is essential to use reliable security software that can detect and remove spyware programs. Additionally, avoid downloading software from unreliable sources, as spyware can be hidden in illegitimate applications."
+        "fr": "Le logiciel espion (spyware) est un type de logiciel malveillant conçu pour surveiller discrètement les activités de l'utilisateur et transmettre ces informations à des tiers, généralement à des fins publicitaires ou pour voler des données personnelles. Pour se protéger contre le spyware, il est essentiel d'utiliser un logiciel de sécurité fiable qui peut détecter et supprimer les programmes espions. De plus, évitez de télécharger des logiciels depuis des sources non fiables, car les logiciels espions peuvent être dissimulés dans des applications illégitimes.",
+        "en": "Spyware is a type of malicious software designed to discreetly monitor the user's activities and transmit this information to third parties, usually for advertising purposes or to steal personal data. To protect against spyware, it is essential to use reliable security software that can detect and remove spyware programs. Additionally, avoid downloading software from unreliable sources, as spyware can be hidden in illegitimate applications."
       }
     },
     {
       "question": {
-        "francais": "Qu'est-ce qu'une clé de sécurité physique et comment fonctionne-t-elle ?",
-        "english": "What is a physical security key and how does it work?"
+        "fr": "Qu'est-ce qu'une clé de sécurité physique et comment fonctionne-t-elle ?",
+        "en": "What is a physical security key and how does it work?"
       },
       "reponses": {
-        "francais": [
+        "fr": [
           {"reponse": "Une clé de sécurité physique est un dispositif matériel utilisé pour renforcer l'authentification à deux facteurs (2FA). Elle se présente sous la forme d'un petit appareil USB ou NFC qui doit être inséré ou tapé pour valider l'authentification. La clé de sécurité génère un code unique à chaque utilisation, ce qui la rend très difficile à pirater.", "points": 2},
           {"reponse": "Une clé de sécurité physique est un type d'attaque par hameçonnage (phishing).", "points": 0},
           {"reponse": "Une clé de sécurité physique est une méthode pour sauvegarder les données.", "points": 0}
         ],
-        "english": [
+        "en": [
           {"reponse": "A physical security key is a hardware device used to enhance Two-Factor Authentication (2FA). It comes in the form of a small USB or NFC device that needs to be inserted or tapped to validate authentication. The security key generates a unique code with each use, making it very difficult to hack.", "points": 2},
           {"reponse": "A physical security key is a type of phishing attack.", "points": 0},
           {"reponse": "A physical security key is a method to back up data.", "points": 0}
         ]
       },
       "explication": {
-        "francais": "Une clé de sécurité physique est un moyen sûr d'améliorer l'authentification à deux facteurs (2FA). Lorsqu'elle est activée, l'utilisateur doit insérer ou tapoter la clé physique pour valider son identité après avoir entré son mot de passe. La clé génère ensuite un code unique qui est utilisé pour compléter le processus d'authentification. Étant donné que la clé de sécurité physique n'est pas connectée à Internet et ne transmet pas de données, elle est extrêmement résistante aux attaques en ligne, telles que le phishing ou le vol de mot de passe.",
-        "english": "A physical security key is a secure way to enhance Two-Factor Authentication (2FA). When enabled, the user needs to insert or tap the physical key to validate their identity after entering their password. The key then generates a unique code that is used to complete the authentication process. Since the physical security key is not connected to the internet and does not transmit data, it is extremely resistant to online attacks, such as phishing or password theft."
+        "fr": "Une clé de sécurité physique est un moyen sûr d'améliorer l'authentification à deux facteurs (2FA). Lorsqu'elle est activée, l'utilisateur doit insérer ou tapoter la clé physique pour valider son identité après avoir entré son mot de passe. La clé génère ensuite un code unique qui est utilisé pour compléter le processus d'authentification. Étant donné que la clé de sécurité physique n'est pas connectée à Internet et ne transmet pas de données, elle est extrêmement résistante aux attaques en ligne, telles que le phishing ou le vol de mot de passe.",
+        "en": "A physical security key is a secure way to enhance Two-Factor Authentication (2FA). When enabled, the user needs to insert or tap the physical key to validate their identity after entering their password. The key then generates a unique code that is used to complete the authentication process. Since the physical security key is not connected to the internet and does not transmit data, it is extremely resistant to online attacks, such as phishing or password theft."
       }
     },
     {
       "question": {
-        "francais": "Qu'est-ce qu'un réseau privé virtuel (VPN) et pourquoi l'utiliser ?",
-        "english": "What is a Virtual Private Network (VPN) and why use it?"
+        "fr": "Qu'est-ce qu'un réseau privé virtuel (VPN) et pourquoi l'utiliser ?",
+        "en": "What is a Virtual Private Network (VPN) and why use it?"
       },
       "reponses": {
-        "francais": [
+        "fr": [
           {"reponse": "Un réseau privé virtuel (VPN) est un service qui permet de sécuriser votre connexion Internet en chiffrant les données et en vous attribuant une adresse IP anonyme. Il permet également de contourner les restrictions géographiques et d'accéder à des contenus bloqués dans certains pays. L'utilisation d'un VPN est recommandée lorsque vous vous connectez à des réseaux publics ou lorsque vous souhaitez protéger votre vie privée en ligne.", "points": 2},
           {"reponse": "Un réseau privé virtuel (VPN) est un outil pour accélérer la vitesse d'Internet.", "points": 0},
           {"reponse": "Un réseau privé virtuel (VPN) est une mesure de sécurité pour protéger votre ordinateur.", "points": 0}
         ],
-        "english": [
+        "en": [
           {"reponse": "A Virtual Private Network (VPN) is a service that secures your internet connection by encrypting data and assigning you an anonymous IP address. It also allows bypassing geographical restrictions and accessing blocked content in some countries. Using a VPN is recommended when connecting to public networks or when you want to protect your online privacy.", "points": 2},
           {"reponse": "A Virtual Private Network (VPN) is a tool to speed up internet speed.", "points": 0},
           {"reponse": "A Virtual Private Network (VPN) is a security measure to protect your computer.", "points": 0}
         ]
       },
       "explication": {
-        "francais": "Un réseau privé virtuel (VPN) est un service qui crée un tunnel crypté entre votre appareil et un serveur distant. Cela garantit que toutes vos données transitent de manière sécurisée, ce qui empêche les pirates et les fournisseurs de services Internet d'intercepter vos informations. De plus, le VPN masque votre adresse IP réelle en vous attribuant une adresse IP anonyme, ce qui renforce votre anonymat en ligne. Il est conseillé d'utiliser un VPN lorsque vous vous connectez à des réseaux publics, tels que les Wi-Fi gratuits dans les cafés ou les aéroports, pour éviter les risques d'interception de données sensibles.",
-        "english": "A Virtual Private Network (VPN) is a service that creates an encrypted tunnel between your device and a remote server. This ensures that all your data is transmitted securely, preventing hackers and internet service providers from intercepting your information. Additionally, the VPN masks your real IP address by assigning you an anonymous IP, enhancing your online anonymity. It is recommended to use a VPN when connecting to public networks, such as free Wi-Fi in cafes or airports, to avoid risks of sensitive data interception."
+        "fr": "Un réseau privé virtuel (VPN) est un service qui crée un tunnel crypté entre votre appareil et un serveur distant. Cela garantit que toutes vos données transitent de manière sécurisée, ce qui empêche les pirates et les fournisseurs de services Internet d'intercepter vos informations. De plus, le VPN masque votre adresse IP réelle en vous attribuant une adresse IP anonyme, ce qui renforce votre anonymat en ligne. Il est conseillé d'utiliser un VPN lorsque vous vous connectez à des réseaux publics, tels que les Wi-Fi gratuits dans les cafés ou les aéroports, pour éviter les risques d'interception de données sensibles.",
+        "en": "A Virtual Private Network (VPN) is a service that creates an encrypted tunnel between your device and a remote server. This ensures that all your data is transmitted securely, preventing hackers and internet service providers from intercepting your information. Additionally, the VPN masks your real IP address by assigning you an anonymous IP, enhancing your online anonymity. It is recommended to use a VPN when connecting to public networks, such as free Wi-Fi in cafes or airports, to avoid risks of sensitive data interception."
       }
     },
     {
       "question": {
-        "francais": "Qu'est-ce qu'une attaque d'ingénierie sociale et comment s'en prémunir ?",
-        "english": "What is a social engineering attack and how to protect against it?"
+        "fr": "Qu'est-ce qu'une attaque d'ingénierie sociale et comment s'en prémunir ?",
+        "en": "What is a social engineering attack and how to protect against it?"
       },
       "reponses": {
-        "francais": [
+        "fr": [
           {"reponse": "Une attaque d'ingénierie sociale est une manipulation psychologique utilisée pour tromper les individus et les inciter à divulguer des informations confidentielles ou à effectuer des actions non sécurisées. Pour se protéger contre ce type d'attaque, il est essentiel d'être vigilant face aux demandes inattendues ou urgentes d'informations, de vérifier l'identité des personnes qui demandent des données sensibles, et de suivre les procédures de sécurité établies par votre organisation.", "points": 2},
           {"reponse": "Une attaque d'ingénierie sociale est un outil pour tester la sécurité d'un réseau informatique.", "points": 0},
           {"reponse": "Une attaque d'ingénierie sociale est une mesure de sécurité pour protéger votre ordinateur.", "points": 0}
         ],
-        "english": [
+        "en": [
           {"reponse": "A social engineering attack is a psychological manipulation used to deceive individuals into disclosing confidential information or performing insecure actions. To protect against this type of attack, it is essential to be vigilant against unexpected or urgent requests for information, verify the identity of people asking for sensitive data, and follow the security procedures established by your organization.", "points": 2},
           {"reponse": "A social engineering attack is a tool to test the security of a computer network.", "points": 0},
           {"reponse": "A social engineering attack is a security measure to protect your computer.", "points": 0}
         ]
       },
       "explication": {
-        "francais": "Une attaque d'ingénierie sociale exploite les faiblesses humaines plutôt que les vulnérabilités techniques. Les attaquants utilisent des tactiques de manipulation psychologique pour inciter les individus à divulguer des mots de passe, des informations financières ou à ouvrir des pièces jointes malveillantes. Pour se protéger contre ce type d'attaque, il est important d'être méfiant face aux demandes inattendues d'informations confidentielles et de suivre des procédures de sécurité strictes. Les employés doivent être régulièrement formés pour reconnaître et signaler les tentatives d'ingénierie sociale.",
-        "english": "A social engineering attack exploits human weaknesses rather than technical vulnerabilities. Attackers use tactics of psychological manipulation to induce individuals to disclose passwords, financial information, or open malicious attachments. To protect against this type of attack, it is essential to be wary of unexpected requests for confidential information and to follow strict security procedures. Employees should be regularly trained to recognize and report social engineering attempts."
+        "fr": "Une attaque d'ingénierie sociale exploite les faiblesses humaines plutôt que les vulnérabilités techniques. Les attaquants utilisent des tactiques de manipulation psychologique pour inciter les individus à divulguer des mots de passe, des informations financières ou à ouvrir des pièces jointes malveillantes. Pour se protéger contre ce type d'attaque, il est important d'être méfiant face aux demandes inattendues d'informations confidentielles et de suivre des procédures de sécurité strictes. Les employés doivent être régulièrement formés pour reconnaître et signaler les tentatives d'ingénierie sociale.",
+        "en": "A social engineering attack exploits human weaknesses rather than technical vulnerabilities. Attackers use tactics of psychological manipulation to induce individuals to disclose passwords, financial information, or open malicious attachments. To protect against this type of attack, it is essential to be wary of unexpected requests for confidential information and to follow strict security procedures. Employees should be regularly trained to recognize and report social engineering attempts."
       }
     }
   ]

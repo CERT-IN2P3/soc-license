@@ -19,6 +19,6 @@ from django.contrib import admin
 
 urlpatterns = [
     path("exams/", include('exam.urls')),
-    path("diplomas/", include('diploma.urls'))
-    # path("admin/", admin.site.urls),
+    path("diplomas/", include('diploma.urls')),
+    path("admin/", admin.site.urls),
 ]

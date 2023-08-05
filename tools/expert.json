@@ -2,112 +2,112 @@
   "questions_expertes": [
     {
       "question": {
-        "francais": "Qu'est-ce qu'une attaque par injection SQL et comment s'en protéger ?",
-        "english": "What is an SQL injection attack and how to protect against it?"
+        "fr": "Qu'est-ce qu'une attaque par injection SQL et comment s'en protéger ?",
+        "en": "What is an SQL injection attack and how to protect against it?"
       },
       "reponses": {
-        "francais": [
+        "fr": [
           {"reponse": "Une attaque par injection SQL est une technique utilisée par les pirates pour insérer du code SQL malveillant dans une requête afin de manipuler la base de données. Pour se protéger contre les attaques par injection SQL, il est essentiel de valider et de filtrer les entrées de l'utilisateur, d'utiliser des requêtes préparées et d'éviter de concaténer des valeurs directement dans les requêtes SQL.", "points": 2},
           {"reponse": "Une attaque par injection SQL est une mesure de sécurité pour renforcer une base de données.", "points": 0},
           {"reponse": "Une attaque par injection SQL est un type d'attaque DDoS.", "points": 0}
         ],
-        "english": [
+        "en": [
           {"reponse": "An SQL injection attack is a technique used by hackers to insert malicious SQL code into a query to manipulate the database. To protect against SQL injection attacks, it is essential to validate and filter user inputs, use prepared statements, and avoid directly concatenating values into SQL queries.", "points": 2},
           {"reponse": "An SQL injection attack is a security measure to strengthen a database.", "points": 0},
           {"reponse": "An SQL injection attack is a type of DDoS attack.", "points": 0}
         ]
       },
       "explication": {
-        "francais": "L'injection SQL est une vulnérabilité courante des applications web qui permet aux attaquants d'interagir avec la base de données de manière non autorisée. En insérant du code SQL malveillant dans les champs de saisie, les pirates peuvent accéder, modifier ou supprimer des données sensibles de la base de données. Pour se protéger contre cette menace, il est important de valider et de filtrer toutes les entrées de l'utilisateur pour éviter l'exécution de code SQL non désiré. L'utilisation de requêtes préparées (paramétrées) permet également de séparer les données des instructions SQL, rendant l'injection SQL inefficace.",
-        "english": "SQL injection is a common vulnerability in web applications that allows attackers to interact with the database in an unauthorized way. By inserting malicious SQL code into input fields, hackers can access, modify, or delete sensitive data from the database. To protect against this threat, it is crucial to validate and filter all user inputs to prevent the execution of unwanted SQL code. Using prepared (parameterized) statements also helps separate data from SQL instructions, making SQL injection ineffective."
+        "fr": "L'injection SQL est une vulnérabilité courante des applications web qui permet aux attaquants d'interagir avec la base de données de manière non autorisée. En insérant du code SQL malveillant dans les champs de saisie, les pirates peuvent accéder, modifier ou supprimer des données sensibles de la base de données. Pour se protéger contre cette menace, il est important de valider et de filtrer toutes les entrées de l'utilisateur pour éviter l'exécution de code SQL non désiré. L'utilisation de requêtes préparées (paramétrées) permet également de séparer les données des instructions SQL, rendant l'injection SQL inefficace.",
+        "en": "SQL injection is a common vulnerability in web applications that allows attackers to interact with the database in an unauthorized way. By inserting malicious SQL code into input fields, hackers can access, modify, or delete sensitive data from the database. To protect against this threat, it is crucial to validate and filter all user inputs to prevent the execution of unwanted SQL code. Using prepared (parameterized) statements also helps separate data from SQL instructions, making SQL injection ineffective."
       }
     },
     {
       "question": {
-        "francais": "Qu'est-ce qu'une attaque par déni de service distribué (DDoS) et comment s'en prémunir ?",
-        "english": "What is a Distributed Denial of Service (DDoS) attack and how to protect against it?"
+        "fr": "Qu'est-ce qu'une attaque par déni de service distribué (DDoS) et comment s'en prémunir ?",
+        "en": "What is a Distributed Denial of Service (DDoS) attack and how to protect against it?"
       },
       "reponses": {
-        "francais": [
+        "fr": [
           {"reponse": "Une attaque par déni de service distribué (DDoS) est une offensive dans laquelle plusieurs machines sont utilisées pour inonder un serveur ou un réseau de trafic, le rendant ainsi indisponible pour les utilisateurs légitimes. Pour se protéger contre les attaques DDoS, il est recommandé d'utiliser un pare-feu robuste, un réseau de distribution de contenu (CDN) et un service anti-DDoS qui peut détecter et filtrer le trafic malveillant.", "points": 2},
           {"reponse": "Une attaque par déni de service distribué (DDoS) est une mesure de sécurité pour protéger un serveur.", "points": 0},
           {"reponse": "Une attaque par déni de service distribué (DDoS) est un moyen d'améliorer les performances du réseau.", "points": 0}
         ],
-        "english": [
+        "en": [
           {"reponse": "A Distributed Denial of Service (DDoS) attack is an offensive in which multiple machines are used to flood a server or network with traffic, making it unavailable for legitimate users. To protect against DDoS attacks, it is recommended to use a robust firewall, a Content Delivery Network (CDN), and an anti-DDoS service that can detect and filter malicious traffic.", "points": 2},
           {"reponse": "A Distributed Denial of Service (DDoS) attack is a security measure to protect a server.", "points": 0},
           {"reponse": "A Distributed Denial of Service (DDoS) attack is a way to improve network performance.", "points": 0}
         ]
       },
       "explication": {
-        "francais": "Une attaque par déni de service distribué (DDoS) vise à submerger un serveur ou un réseau avec une quantité massive de trafic, rendant ainsi le service inaccessible aux utilisateurs légitimes. Ces attaques sont généralement menées à l'aide d'un botnet, qui est un réseau de machines compromises contrôlées par les attaquants. Pour se protéger contre les attaques DDoS, il est essentiel de disposer d'une infrastructure réseau résiliente, capable de gérer des volumes élevés de trafic. Les pare-feu et les services anti-DDoS sont conçus pour détecter les schémas de trafic malveillant et filtrer le trafic non désiré.",
-        "english": "A Distributed Denial of Service (DDoS) attack aims to overwhelm a server or network with a massive amount of traffic, thereby making the service inaccessible to legitimate users. These attacks are typically carried out using a botnet, which is a network of compromised machines controlled by the attackers. To protect against DDoS attacks, it is crucial to have a resilient network infrastructure capable of handling high volumes of traffic. Firewalls and anti-DDoS services are designed to detect malicious traffic patterns and filter unwanted traffic."
+        "fr": "Une attaque par déni de service distribué (DDoS) vise à submerger un serveur ou un réseau avec une quantité massive de trafic, rendant ainsi le service inaccessible aux utilisateurs légitimes. Ces attaques sont généralement menées à l'aide d'un botnet, qui est un réseau de machines compromises contrôlées par les attaquants. Pour se protéger contre les attaques DDoS, il est essentiel de disposer d'une infrastructure réseau résiliente, capable de gérer des volumes élevés de trafic. Les pare-feu et les services anti-DDoS sont conçus pour détecter les schémas de trafic malveillant et filtrer le trafic non désiré.",
+        "en": "A Distributed Denial of Service (DDoS) attack aims to overwhelm a server or network with a massive amount of traffic, thereby making the service inaccessible to legitimate users. These attacks are typically carried out using a botnet, which is a network of compromised machines controlled by the attackers. To protect against DDoS attacks, it is crucial to have a resilient network infrastructure capable of handling high volumes of traffic. Firewalls and anti-DDoS services are designed to detect malicious traffic patterns and filter unwanted traffic."
       }
     },
     {
       "question": {
-        "francais": "Qu'est-ce qu'une attaque d'exécution de code à distance (RCE) et comment la prévenir ?",
-        "english": "What is a Remote Code Execution (RCE) attack and how to prevent it?"
+        "fr": "Qu'est-ce qu'une attaque d'exécution de code à distance (RCE) et comment la prévenir ?",
+        "en": "What is a Remote Code Execution (RCE) attack and how to prevent it?"
       },
       "reponses": {
-        "francais": [
+        "fr": [
           {"reponse": "Une attaque d'exécution de code à distance (RCE) est une faille de sécurité qui permet à un attaquant d'exécuter du code malveillant à distance sur un système ou un serveur vulnérable. Pour prévenir les attaques RCE, il est crucial de maintenir à jour les logiciels et les systèmes d'exploitation, de limiter les privilèges d'accès et de mettre en œuvre des mécanismes de validation et de désinfection des données d'entrée.", "points": 2},
           {"reponse": "Une attaque d'exécution de code à distance (RCE) est une mesure de sécurité pour tester la vulnérabilité d'un système.", "points": 0},
           {"reponse": "Une attaque d'exécution de code à distance (RCE) est une stratégie pour optimiser les performances d'un serveur.", "points": 0}
         ],
-        "english": [
+        "en": [
           {"reponse": "A Remote Code Execution (RCE) attack is a security flaw that allows an attacker to execute malicious code remotely on a vulnerable system or server. To prevent RCE attacks, it is crucial to keep software and operating systems up to date, limit access privileges, and implement data input validation and sanitization mechanisms.", "points": 2},
           {"reponse": "A Remote Code Execution (RCE) attack is a security measure to test the vulnerability of a system.", "points": 0},
           {"reponse": "A Remote Code Execution (RCE) attack is a strategy to optimize server performance.", "points": 0}
         ]
       },
       "explication": {
-        "francais": "Une attaque d'exécution de code à distance (RCE) est l'une des vulnérabilités les plus graves car elle permet à un attaquant de prendre le contrôle total d'un système. Les attaques RCE sont souvent le résultat de logiciels malveillants, de failles de sécurité ou de défauts de programmation qui permettent aux attaquants d'injecter et d'exécuter du code à distance. Pour se protéger contre ces attaques, il est essentiel de maintenir à jour tous les logiciels et systèmes d'exploitation pour combler les failles de sécurité connues. Limiter les privilèges d'accès réduit également les risques d'une exploitation réussie.",
-        "english": "A Remote Code Execution (RCE) attack is one of the most severe vulnerabilities as it allows an attacker to gain full control of a system. RCE attacks are often the result of malware, security flaws, or programming defects that enable attackers to inject and execute code remotely. To protect against these attacks, it is crucial to keep all software and operating systems up to date to patch known security vulnerabilities. Limiting access privileges also reduces the risks of a successful exploitation."
+        "fr": "Une attaque d'exécution de code à distance (RCE) est l'une des vulnérabilités les plus graves car elle permet à un attaquant de prendre le contrôle total d'un système. Les attaques RCE sont souvent le résultat de logiciels malveillants, de failles de sécurité ou de défauts de programmation qui permettent aux attaquants d'injecter et d'exécuter du code à distance. Pour se protéger contre ces attaques, il est essentiel de maintenir à jour tous les logiciels et systèmes d'exploitation pour combler les failles de sécurité connues. Limiter les privilèges d'accès réduit également les risques d'une exploitation réussie.",
+        "en": "A Remote Code Execution (RCE) attack is one of the most severe vulnerabilities as it allows an attacker to gain full control of a system. RCE attacks are often the result of malware, security flaws, or programming defects that enable attackers to inject and execute code remotely. To protect against these attacks, it is crucial to keep all software and operating systems up to date to patch known security vulnerabilities. Limiting access privileges also reduces the risks of a successful exploitation."
       }
     },
     {
       "question": {
-        "francais": "Qu'est-ce qu'une attaque de type homme du milieu (MITM) et comment l'empêcher ?",
-        "english": "What is a Man-in-the-Middle (MITM) attack and how to prevent it?"
+        "fr": "Qu'est-ce qu'une attaque de type homme du milieu (MITM) et comment l'empêcher ?",
+        "en": "What is a Man-in-the-Middle (MITM) attack and how to prevent it?"
       },
       "reponses": {
-        "francais": [
+        "fr": [
           {"reponse": "Une attaque de type homme du milieu (MITM) est une attaque dans laquelle un attaquant s'insère entre deux parties communicantes pour intercepter et éventuellement modifier les données échangées. Pour empêcher les attaques MITM, il est recommandé d'utiliser des protocoles de communication sécurisés tels que HTTPS, d'éviter de se connecter à des réseaux Wi-Fi non sécurisés, et d'utiliser des certificats numériques pour vérifier l'authenticité des sites web.", "points": 2},
           {"reponse": "Une attaque de type homme du milieu (MITM) est une mesure de sécurité pour tester la robustesse d'un réseau.", "points": 0},
           {"reponse": "Une attaque de type homme du milieu (MITM) est une stratégie pour améliorer la vitesse de transmission des données.", "points": 0}
         ],
-        "english": [
+        "en": [
           {"reponse": "A Man-in-the-Middle (MITM) attack is an attack in which an attacker inserts themselves between two communicating parties to intercept and potentially modify the exchanged data. To prevent MITM attacks, it is recommended to use secure communication protocols such as HTTPS, avoid connecting to unsecured Wi-Fi networks, and use digital certificates to verify the authenticity of websites.", "points": 2},
           {"reponse": "A Man-in-the-Middle (MITM) attack is a security measure to test the resilience of a network.", "points": 0},
           {"reponse": "A Man-in-the-Middle (MITM) attack is a strategy to improve data transmission speed.", "points": 0}
         ]
       },
       "explication": {
-        "francais": "Une attaque de type homme du milieu (MITM) se produit lorsque l'attaquant intercepte la communication entre deux parties légitimes et se fait passer pour l'une d'entre elles. Cela permet à l'attaquant de lire, modifier ou bloquer les messages échangés entre les parties sans qu'elles s'en rendent compte. Les attaques MITM sont souvent lancées sur des réseaux Wi-Fi publics non sécurisés ou en exploitant des vulnérabilités dans les protocoles de communication. Pour se prémunir contre ces attaques, il est essentiel d'utiliser des protocoles de communication chiffrés, de vérifier l'authenticité des sites web à l'aide de certificats numériques, et d'éviter de se connecter à des réseaux Wi-Fi non sécurisés.",
-        "english": "A Man-in-the-Middle (MITM) attack occurs when the attacker intercepts communication between two legitimate parties and impersonates one of them. This allows the attacker to read, modify, or block messages exchanged between the parties without their knowledge. MITM attacks are often launched on unsecured public Wi-Fi networks or by exploiting vulnerabilities in communication protocols. To prevent these attacks, it is essential to use encrypted communication protocols, verify the authenticity of websites using digital certificates, and avoid connecting to unsecured Wi-Fi networks."
+        "fr": "Une attaque de type homme du milieu (MITM) se produit lorsque l'attaquant intercepte la communication entre deux parties légitimes et se fait passer pour l'une d'entre elles. Cela permet à l'attaquant de lire, modifier ou bloquer les messages échangés entre les parties sans qu'elles s'en rendent compte. Les attaques MITM sont souvent lancées sur des réseaux Wi-Fi publics non sécurisés ou en exploitant des vulnérabilités dans les protocoles de communication. Pour se prémunir contre ces attaques, il est essentiel d'utiliser des protocoles de communication chiffrés, de vérifier l'authenticité des sites web à l'aide de certificats numériques, et d'éviter de se connecter à des réseaux Wi-Fi non sécurisés.",
+        "en": "A Man-in-the-Middle (MITM) attack occurs when the attacker intercepts communication between two legitimate parties and impersonates one of them. This allows the attacker to read, modify, or block messages exchanged between the parties without their knowledge. MITM attacks are often launched on unsecured public Wi-Fi networks or by exploiting vulnerabilities in communication protocols. To prevent these attacks, it is essential to use encrypted communication protocols, verify the authenticity of websites using digital certificates, and avoid connecting to unsecured Wi-Fi networks."
       }
     },
     {
       "question": {
-        "francais": "Qu'est-ce qu'une attaque de force brute et comment la contrer ?",
-        "english": "What is a brute-force attack and how to counter it?"
+        "fr": "Qu'est-ce qu'une attaque de force brute et comment la contrer ?",
+        "en": "What is a brute-force attack and how to counter it?"
       },
       "reponses": {
-        "francais": [
+        "fr": [
           {"reponse": "Une attaque de force brute est une méthode utilisée par les attaquants pour essayer toutes les combinaisons possibles de mots de passe jusqu'à ce qu'ils trouvent le bon. Pour contrer les attaques de force brute, il est essentiel d'utiliser des mots de passe forts et un mécanisme de verrouillage du compte après plusieurs tentatives infructueuses. L'utilisation de l'authentification à deux facteurs (2FA) peut également renforcer la sécurité en demandant une deuxième forme de vérification avant d'accorder l'accès.", "points": 2},
           {"reponse": "Une attaque de force brute est une mesure de sécurité pour tester la résistance d'un pare-feu.", "points": 0},
           {"reponse": "Une attaque de force brute est une stratégie pour augmenter la vitesse de traitement des données.", "points": 0}
         ],
-        "english": [
+        "en": [
           {"reponse": "A brute-force attack is a method used by attackers to try all possible combinations of passwords until they find the correct one. To counter brute-force attacks, it is essential to use strong passwords and an account lockout mechanism after several unsuccessful attempts. Using Two-Factor Authentication (2FA) can also enhance security by requiring a second form of verification before granting access.", "points": 2},
           {"reponse": "A brute-force attack is a security measure to test the resilience of a firewall.", "points": 0},
           {"reponse": "A brute-force attack is a strategy to increase data processing speed.", "points": 0}
         ]
       },
       "explication": {
-        "francais": "Une attaque de force brute consiste à essayer toutes les combinaisons possibles de mots de passe jusqu'à ce que le mot de passe correct soit trouvé. Les attaquants utilisent souvent des programmes automatisés pour générer rapidement des milliers, voire des millions, de combinaisons de mots de passe. Pour contrer cette attaque, il est essentiel d'encourager les utilisateurs à choisir des mots de passe forts, c'est-à-dire longs, complexes et comprenant des caractères variés (lettres majuscules et minuscules, chiffres et symboles). De plus, mettre en place un mécanisme de verrouillage du compte après un nombre limité de tentatives infructueuses peut décourager les attaquants. L'authentification à deux facteurs (2FA) renforce également la sécurité en ajoutant une couche supplémentaire de protection.",
-        "english": "A brute-force attack involves trying all possible combinations of passwords until the correct password is found. Attackers often use automated programs to quickly generate thousands or even millions of password combinations. To counter this attack, it is essential to encourage users to choose strong passwords, meaning passwords that are long, complex, and include various character types (uppercase and lowercase letters, numbers, and symbols). Additionally, implementing an account lockout mechanism after a limited number of unsuccessful attempts can deter attackers. Two-Factor Authentication (2FA) also enhances security by adding an additional layer of protection."
+        "fr": "Une attaque de force brute consiste à essayer toutes les combinaisons possibles de mots de passe jusqu'à ce que le mot de passe correct soit trouvé. Les attaquants utilisent souvent des programmes automatisés pour générer rapidement des milliers, voire des millions, de combinaisons de mots de passe. Pour contrer cette attaque, il est essentiel d'encourager les utilisateurs à choisir des mots de passe forts, c'est-à-dire longs, complexes et comprenant des caractères variés (lettres majuscules et minuscules, chiffres et symboles). De plus, mettre en place un mécanisme de verrouillage du compte après un nombre limité de tentatives infructueuses peut décourager les attaquants. L'authentification à deux facteurs (2FA) renforce également la sécurité en ajoutant une couche supplémentaire de protection.",
+        "en": "A brute-force attack involves trying all possible combinations of passwords until the correct password is found. Attackers often use automated programs to quickly generate thousands or even millions of password combinations. To counter this attack, it is essential to encourage users to choose strong passwords, meaning passwords that are long, complex, and include various character types (uppercase and lowercase letters, numbers, and symbols). Additionally, implementing an account lockout mechanism after a limited number of unsuccessful attempts can deter attackers. Two-Factor Authentication (2FA) also enhances security by adding an additional layer of protection."
       }
     }
   ]

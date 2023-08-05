@@ -1,4 +1,4 @@
-class SocLicense {
+class SocLicenseExam {
   constructor(url) {
     this.url = url;
     this.result = {};
@@ -17,6 +17,9 @@ class SocLicense {
     $('#soc-license-close').on('click', function() {
         self.close();
     })
+    $('#soc-license-exam-banner-firstname').text(Cookies.get("firstname"))
+    $('#soc-license-exam-banner-lastname').text(Cookies.get("lastname"))
+    this.progress();
   }
 
   showStage(stage) {
@@ -41,6 +44,10 @@ class SocLicense {
         'lang': $('#language').val()
     }
     var self = this;
+    Cookies.set('firstname', data.firstname, { expires: 1 })
+    Cookies.set('lastname', data.lastname, { expires: 1 })
+    $('#soc-license-exam-banner-firstname').text(Cookies.get("firstname"))
+    $('#soc-license-exam-banner-lastname').text(Cookies.get("lastname"))
     $.ajax({
       url: this.url + 'exams/init/',
       type: 'POST',
@@ -58,6 +65,11 @@ class SocLicense {
       success: function(data){
         self.showStage(data.stage);
         self.result = data;
+        Cookies.set('score', 0, { expires: 1 })
+        Cookies.set('basic', data.basic, { expires: 1 })
+        Cookies.set('advanced', data.advanced, { expires: 1 })
+        Cookies.set('expert', data.expert, { expires: 1 })
+        self.progress();
         self.question();
       }
     })
@@ -144,6 +156,8 @@ class SocLicense {
         $('#soc-license-explanation').text(data.explanation);
         $('#soc-license-explanation').show();
         $('#soc-license-next-question').show();
+        Cookies.set('score', data.score)
+        self.progress()
       }
     })
   }
@@ -167,8 +181,31 @@ class SocLicense {
         console.log(data);
         self.result = data;
         self.showStage(data.stage);
+        Cookies.remove('firstname')
+        Cookies.remove('lastname')
+        Cookies.remove('basic')
+        Cookies.remove('advanced')
+        Cookies.remove('expert')
+        Cookies.remove('score')
       }
     })
+  }
+
+  progress() {
+    if (Number(Cookies.get('score')) <= Number(Cookies.get('basic'))) {
+        $('#soc-licence-exam-score-basic').css('width', Cookies.get('score') * 100 / Cookies.get('expert') + '%')
+        $('#soc-licence-exam-score-advanced').css('width', '0%')
+        $('#soc-licence-exam-score-expert').css('width', '0%')
+    } else {
+        $('#soc-licence-exam-score-basic').css('width', Cookies.get('basic') * 100 / Cookies.get('expert') + '%')
+        if (Number(Cookies.get('score')) <= Number(Cookies.get('advanced'))) {
+            $('#soc-licence-exam-score-advanced').css('width', (Cookies.get('score') - Cookies.get('basic')) * 100 / Cookies.get('expert') + '%')
+            $('#soc-licence-exam-score-expert').css('width', '0%')
+        } else {
+            $('#soc-licence-exam-score-advanced').css('width', (Cookies.get('advanced') - Cookies.get('basic')) * 100 / Cookies.get('expert') + '%')
+            $('#soc-licence-exam-score-expert').css('width', (Cookies.get('score') - Cookies.get('advanced')) * 100 / Cookies.get('expert') + '%')
+        }
+    }
   }
 
 }
