@@ -1,4 +1,4 @@
-from django.views.decorators.csrf import csrf_exempt
+from django.views.decorators.csrf import csrf_exempt, ensure_csrf_cookie
 from soc_license.settings import SOC_LICENSE
 
 from django.http import JsonResponse
@@ -11,7 +11,6 @@ from diploma.diploma import DiplomaCtrl
 import json
 
 
-@csrf_exempt
 def index(request):
     result = {
         'status': 'error',
@@ -41,8 +40,6 @@ def index(request):
                 }
     return JsonResponse(result)
 
-
-@csrf_exempt
 def init(request):
     result = {
         'status': 'error',
@@ -104,7 +101,6 @@ def init(request):
     return JsonResponse(result)
 
 
-@csrf_exempt
 def questions(request):
     """
     Method to handle /questions

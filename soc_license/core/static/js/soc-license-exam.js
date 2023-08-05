@@ -3,6 +3,7 @@ class SocLicenseExam {
     this.url = url;
     this.result = {};
     this.question();
+    this.csrftoken = Cookies.get('csrftoken')
     self = this;
     $('#soc-license-next-question').hide();
     $('#soc-license-start').on('click', function() {
@@ -48,6 +49,9 @@ class SocLicenseExam {
     Cookies.set('lastname', data.lastname, { expires: 1 })
     $('#soc-license-exam-banner-firstname').text(Cookies.get("firstname"))
     $('#soc-license-exam-banner-lastname').text(Cookies.get("lastname"))
+    $.ajaxSetup({
+        headers: { "X-CSRFToken": self.csrftoken}
+    })
     $.ajax({
       url: this.url + 'exams/init/',
       type: 'POST',
@@ -63,6 +67,7 @@ class SocLicenseExam {
         'Access-Control-Allow-Headers':'application/json',
         },
       success: function(data){
+        console.log(data)
         self.showStage(data.stage);
         self.result = data;
         Cookies.set('score', 0, { expires: 1 })
@@ -77,6 +82,9 @@ class SocLicenseExam {
 
   question() {
     var self = this;
+    $.ajaxSetup({
+        headers: { "X-CSRFToken": self.csrftoken}
+    })
     return $.ajax({
       url: this.url + 'exams/questions/',
       type: 'GET',
@@ -128,6 +136,9 @@ class SocLicenseExam {
         'answer': $('input[name="soc-license-question-answer"]:checked').val()
     }
     console.log(data)
+    $.ajaxSetup({
+        headers: { "X-CSRFToken": self.csrftoken}
+    })
     return $.ajax({
       url: this.url + 'exams/questions/' + self.result['question'],
       type: 'POST',
@@ -164,6 +175,9 @@ class SocLicenseExam {
 
   close() {
     var self = this;
+    $.ajaxSetup({
+        headers: { "X-CSRFToken": self.csrftoken}
+    })
     return $.ajax({
       url: this.url + 'exams/init/',
       type: 'DELETE',

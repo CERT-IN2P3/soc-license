@@ -8,10 +8,14 @@ class SocLicenseDiploma {
     $('#soc-license-diploma-unsign-btn').on('click', function() {
         self.unsign();
     })
+    this.csrftoken = Cookies.get('csrftoken')
   }
 
   sha512sum() {
     var self = this;
+    $.ajaxSetup({
+        headers: { "X-CSRFToken": self.csrftoken}
+    })
     return $.ajax({
       url: this.url + 'diplomas/' + $('#soc-license-diploma-uuid').val() + '?format=sha512sum',
       type: 'GET',
@@ -37,6 +41,9 @@ class SocLicenseDiploma {
     var data = {
         "signature": $('#soc-license-diploma-sign').val()
     };
+    $.ajaxSetup({
+        headers: { "X-CSRFToken": self.csrftoken}
+    })
     return $.ajax({
       url: this.url + 'diplomas/',
       type: 'POST',

@@ -7,7 +7,6 @@ from diploma.diploma import DiplomaCtrl
 import json
 
 
-@csrf_exempt
 def diploma_view(request, diploma):
     result = {
         'status': 'error',
@@ -44,7 +43,6 @@ def diploma_view(request, diploma):
     return JsonResponse(result)
 
 
-@csrf_exempt
 def index(request):
     result = {
         'status': 'error',
