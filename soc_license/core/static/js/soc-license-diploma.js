@@ -55,7 +55,7 @@ class SocLicenseDiploma {
         console.log(data)
         $('#soc-license-diploma-unsign-firstname').val(data.firstname)
         $('#soc-license-diploma-unsign-lastname').val(data.lastname)
-        $('#soc-license-diploma-unsign-score').val(data.score)
+        $('#soc-license-diploma-unsign-level').val(data.level)
         $('#soc-license-diploma-unsign-date').val(data.date)
         $('#soc-license-diploma-uuid').val(data.uuid)
       }

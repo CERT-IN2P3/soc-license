@@ -2,6 +2,7 @@ from uuid import uuid4
 from datetime import datetime
 from fpdf import FPDF
 from diploma.models import Diploma
+from soc_license.settings import SOC_LICENSE
 import hashlib
 import base64
 import rsa
@@ -134,11 +135,17 @@ class DiplomaCtrl(object):
         with open('./config/diploma.pub', mode='rb') as signkeyfile:
             keydata = signkeyfile.read()
         signkey = rsa.PublicKey.load_pkcs1(keydata)
+        if self.session["score"] < SOC_LICENSE['threshold']['advanced']:
+            level = 'basic'
+        elif self.session["score"] < SOC_LICENSE['threshold']['expert']:
+            level = 'advanced'
+        else:
+            level = 'expert'
         token = {
             'firstname': self.session['firstname'],
             'lastname': self.session['lastname'],
             'date': self.date.strftime("%d/%m/%Y"),
-            'score': self.session['score'],
+            'level': level,
             'uuid': self.uuid
         }
         crypto_token = rsa.encrypt(json.dumps(token).encode('utf-8'), signkey)
