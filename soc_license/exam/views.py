@@ -11,36 +11,7 @@ from diploma.diploma import DiplomaCtrl
 import json
 
 
-def index(request):
-    result = {
-        'status': 'error',
-        'message': 'Unknown command'
-    }
-    if request.method == 'POST':
-        data = json.loads(request.body)
-        if 'score' not in request.session:
-            result = {
-                'stage': 'init',
-                'status': 'error',
-                'message': 'Test license not correctly initialize'
-            }
-        elif 'score' in request.session:
-            if valid_init(data):
-                result = {
-                    'stage': 'question',
-                    'status': 'error',
-                    'message': 'Test license already initialize'
-                }
-            elif 'logout' in data:
-                request.session.flush()
-                result = {
-                    'stage': 'init',
-                    'status': 'success',
-                    'message': 'You ve been logout'
-                }
-    return JsonResponse(result)
-
-
+@csrf_exempt
 def init(request):
     result = {
         'status': 'error',
@@ -103,6 +74,7 @@ def init(request):
     return JsonResponse(result)
 
 
+@csrf_exempt
 def questions(request):
     """
     Method to handle /questions
@@ -154,6 +126,7 @@ def questions(request):
     return JsonResponse(result)
 
 
+@csrf_exempt
 def answer(request, question):
     result = {
         'status': 'error',
