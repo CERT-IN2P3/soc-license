@@ -5,6 +5,5 @@ from . import views
 urlpatterns = [
     path("questions/", views.questions, name='questions'),
     re_path(r'questions/(?P<question>[\w]+)', views.answer, name='answer'),
-    path("init/", views.init, name='init'),
-    path("", views.index, name="index"),
+    path("init/", views.init, name='init')
 ]
