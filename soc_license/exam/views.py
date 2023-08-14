@@ -22,7 +22,6 @@ def init(request):
     }
     if request.method == 'POST':
         data = json.loads(request.body)
-        print(request.headers)
         if 'score' in request.session:
             result = {
                 'status': 'error',
@@ -108,11 +107,10 @@ def questions(request):
                 result['status'] = 'success'
                 if 'uuid' not in request.session:
                     diploma = DiplomaCtrl(session=request.session)
-                    diploma.sign()
-                    diploma.file()
-                    diploma.sha512sum()
                     request.session['uuid'] = diploma.uuid
+                    request.session['signature'] = diploma.signature
                 result['uuid'] = '{uuid}'.format(uuid=request.session['uuid'])
+                result['signature'] = '{signature}'.format(signature=request.session['signature'])
         else:
             if request.session['score'] < SOC_LICENSE['threshold']['basic']:
                 level = 'basic'

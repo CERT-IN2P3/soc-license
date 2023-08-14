@@ -4,5 +4,5 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name='index'),
-    re_path(r'(?P<diploma>[\w-]+)', views.diploma_view, name='diploma_view')
+    re_path(r'(?P<uuid>[\w-]+)\.(?P<format>[\w]+)', views.diploma_view, name='diploma_view')
 ]

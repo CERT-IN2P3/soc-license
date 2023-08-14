@@ -1,14 +1,25 @@
+SOC_LICENSE = {
+  'diploma': {
+    'uuid': '#soc-license-diploma-uuid',
+    'signature': '#soc-license-diploma-signature',
+    'sha512sum': '#soc-license-diploma-sha512sum',
+    'unsign': {
+      'btn': '#soc-license-diploma-unsign-btn',
+      'firstname': '#soc-license-diploma-unsign-firstname',
+      'lastname': '#soc-license-diploma-unsign-lastname',
+      'level': '#soc-license-diploma-unsign-level',
+      'date': '#soc-license-diploma-unsign-date',
+    }
+  }
+}
+
 class SocLicenseDiploma {
   constructor(url) {
     this.url = url;
     self = this;
-    $('#soc-license-diploma-uuid-btn').on('click', function() {
-        self.sha512sum();
-    })
-    $('#soc-license-diploma-unsign-btn').on('click', function() {
+    $(SOC_LICENSE['diploma']['unsign']['btn']).on('click', function() {
         self.unsign();
     })
-    this.csrftoken = Cookies.get('csrftoken')
   }
 
   sha512sum() {
@@ -17,7 +28,7 @@ class SocLicenseDiploma {
         headers: { "X-CSRFToken": self.csrftoken}
     })
     return $.ajax({
-      url: this.url + 'diplomas/' + $('#soc-license-diploma-uuid').val() + '?format=sha512sum',
+      url: this.url + 'diplomas/' + $(SOC_LICENSE['diploma']['uuid']).val() + '?format=sha512sum',
       type: 'GET',
       crossDomain: true,
       dataType: 'json',
@@ -31,7 +42,7 @@ class SocLicenseDiploma {
         },
       success: function(data){
         console.log(data)
-        $('#soc-license-sha512sum').val(data.sha512sum)
+        $(SOC_LICENSE['diploma']['sha512sum']).val(data.sha512sum)
       }
     })
   }
@@ -39,7 +50,8 @@ class SocLicenseDiploma {
   unsign() {
     var self = this;
     var data = {
-        "signature": $('#soc-license-diploma-sign').val()
+        "uuid": $(SOC_LICENSE['diploma']["uuid"]).val(),
+        "signature": $(SOC_LICENSE['diploma']['signature']).val()
     };
     $.ajaxSetup({
         headers: { "X-CSRFToken": self.csrftoken}
@@ -60,11 +72,10 @@ class SocLicenseDiploma {
         },
       success: function(data){
         console.log(data)
-        $('#soc-license-diploma-unsign-firstname').val(data.firstname)
-        $('#soc-license-diploma-unsign-lastname').val(data.lastname)
-        $('#soc-license-diploma-unsign-level').val(data.level)
-        $('#soc-license-diploma-unsign-date').val(data.date)
-        $('#soc-license-diploma-uuid').val(data.uuid)
+        $(SOC_LICENSE['diploma']['unsign']['firstname']).val(data.firstname)
+        $(SOC_LICENSE['diploma']['unsign']['lastname']).val(data.lastname)
+        $(SOC_LICENSE['diploma']['unsign']['level']).val(data.level)
+        $(SOC_LICENSE['diploma']['unsign']['date']).val(data.date)
       }
     })
   }

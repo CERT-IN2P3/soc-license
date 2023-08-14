@@ -33,11 +33,19 @@ SOC_LICENSE = {
     'length': 2,
     'baseurl': 'uuid://127.0.0.1:8000/',
     'threshold': {
-        'basic': 14,
+        'basic': 2,
         'advanced': 18,
         'expert': 20
     },
-    'diploma': BASE_DIR / "data/diplomas"
+    'diploma': {
+        'basedir': BASE_DIR / "data/diplomas",
+        'pdf': {
+            'line1': 'Diploma Certificate',
+            'line2': 'This certify that',
+            'line3': 'successfully finished the internet license test',
+            'line4': 'of soc-license'
+        }
+    }
 }
 
 # Application definition
