@@ -33,7 +33,6 @@ class Question(models.Model):
             'answers': list()
         }
         for answer in locale_answers:
-            print(answer)
             result['answers'].append({
                 'text': answer["text"],
                 'id': answer["id"]

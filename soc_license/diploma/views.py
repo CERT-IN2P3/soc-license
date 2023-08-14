@@ -1,7 +1,5 @@
 from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponse, JsonResponse
-from diploma.models import Diploma
-from soc_license.settings import SOC_LICENSE
 
 from diploma.diploma import DiplomaCtrl
 
@@ -9,41 +7,30 @@ import json
 
 
 @csrf_exempt
-def diploma_view(request, diploma):
+def diploma_view(request, uuid, format):
     result = {
         'status': 'error',
         'message': 'diploma error: get unexcepted behavior'
     }
     if request.method == 'GET':
-        if 'format' in request.GET:
-            response_format = request.GET['format']
+        if request.body.decode('utf-8') != '':
+            data = json.loads(request.body)
         else:
-            response_format = 'pdf'
-        try:
-            sha512sum = Diploma.objects.get(uuid=diploma)
-            result = {
-                'status': 'success',
-                'uuid': diploma,
-                'sha512sum': sha512sum.sha512sum
-            }
-        except Diploma.DoesNotExist:
-            result = {
-                'status': 'failed',
-                'uuid': diploma,
-                'message': 'No diploma found with uuid: {uuid}'.format(uuid=diploma)
-            }
-        if response_format == 'pdf':
-            try:
-                with open('{basedir}/{uuid}.pdf'.format(
-                        basedir=SOC_LICENSE['diploma'],
-                        uuid=diploma), 'rb') as pdf:
-                    response = HttpResponse(pdf.read())
-                    response['Content-Disposition'] = 'inline;filename={}.pdf'.format(diploma)
-                    return HttpResponse(response.content,
-                                        content_type='application/pdf')
-                pdf.closed
-            except FileNotFoundError:
-                pass
+            data = dict()
+        if 'signature' in data:
+            signature = data['signature']
+        else:
+            signature = None
+
+        diploma = DiplomaCtrl(session=request.session,
+                              uuid=uuid,
+                              signature=signature)
+        result = diploma.get(format)
+        if format == 'pdf':
+            response = HttpResponse(result)
+            response['Content-Disposition'] = 'inline;filename={}.pdf'.format(diploma)
+            return HttpResponse(response.content,
+                                content_type='application/pdf')
     return JsonResponse(result)
 
 
@@ -55,5 +42,9 @@ def index(request):
     }
     if request.method == 'POST':
         data = json.loads(request.body)
-        result = DiplomaCtrl.unsign(data['signature'])
+        print('diploma_view()\n    uuid: {}\n    signature: {}'.format(data['uuid'], data['signature']))
+        diploma = DiplomaCtrl(session=request.session,
+                              uuid=data['uuid'],
+                              signature=data['signature'])
+        result = diploma.unsign()
     return JsonResponse(result)
