@@ -13,7 +13,10 @@ def diploma_view(request, uuid, format):
         'message': 'diploma error: get unexcepted behavior'
     }
     if request.method == 'GET':
-        if request.body.decode('utf-8') != '':
+        if 'data' in request.GET:
+            data = json.loads(request.GET['data'])
+            print('diploma_view()\n    data: {}'.format(data))
+        elif request.body.decode('utf-8') != '':
             data = json.loads(request.body)
         else:
             data = dict()
