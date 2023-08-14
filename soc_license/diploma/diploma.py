@@ -191,8 +191,7 @@ class DiplomaCtrl(object):
         self.signature = base64.b64encode(crypto_token).decode('utf-8')
 
     def unsign(self):
-        print('DiplomaCtrl.unsign()\n    private_key: {}\n    signature: {}\n    uuid: {}'.format(
-            self.diploma.private_key,
+        print('DiplomaCtrl.unsign()\n    signature: {}\n    uuid: {}'.format(
             self.signature,
             self.uuid
         ))
@@ -202,6 +201,7 @@ class DiplomaCtrl(object):
             uncrypt_signature = rsa.decrypt(decode_signature,
                                             rsa.PrivateKey.load_pkcs1(self.diploma.private_key))
             result = json.loads(uncrypt_signature)
+            result['signature'] = self.signature
             result['status'] = 'success'
         except rsa.DecryptionError:
             result['status'] = 'error'
