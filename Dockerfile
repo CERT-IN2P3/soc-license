@@ -16,5 +16,4 @@ RUN python manage.py migrate
 RUN python manage.py loaddata ../tools/initial-data.json
 RUN pyrsa-keygen --out=./config/diploma.key --pubout=./config/diploma.pub 2048
 
-ENTRYPOINT ["python3"]
 CMD ["scripts/start.sh"]
