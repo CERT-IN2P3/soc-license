@@ -133,19 +133,19 @@ class DiplomaCtrl(object):
                   new_x="LMARGIN",
                   align='C')
         file.set_font('helvetica', size=6)
-        file.image('./core/static/soc-license-badge.png',
-                   x=120,
-                   y=80,
-                   w=50)
+        file.image(SOC_LICENSE['diploma']['pdf']['badge'],
+                   x=150,
+                   y=95,
+                   w=25)
         file.set_y(135)
         file.set_x(150)
-        file.cell(txt="uuid:{pdfname}".format(pdfname=self.uuid),
+        file.cell(txt="{pdfname}".format(pdfname=self.uuid),
                   h=8)
         file.line(15, 15, 195, 15)
         file.line(15, 133, 195, 133)
         file.set_y(-25)
         file.set_x(0)
-        file.image('./core/static/brand-logo.png',
+        file.image(SOC_LICENSE['diploma']['pdf']['brand'],
                    x=15,
                    y=135,
                    w=12)
@@ -191,10 +191,6 @@ class DiplomaCtrl(object):
         self.signature = base64.b64encode(crypto_token).decode('utf-8')
 
     def unsign(self):
-        print('DiplomaCtrl.unsign()\n    signature: {}\n    uuid: {}'.format(
-            self.signature,
-            self.uuid
-        ))
         decode_signature = base64.b64decode(self.signature)
         result = dict()
         try:

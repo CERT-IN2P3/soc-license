@@ -45,7 +45,6 @@ def index(request):
     }
     if request.method == 'POST':
         data = json.loads(request.body)
-        print('diploma_view()\n    uuid: {}\n    signature: {}'.format(data['uuid'], data['signature']))
         diploma = DiplomaCtrl(session=request.session,
                               uuid=data['uuid'],
                               signature=data['signature'])

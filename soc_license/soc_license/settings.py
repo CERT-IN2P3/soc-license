@@ -31,7 +31,6 @@ ALLOWED_HOSTS = [
 
 SOC_LICENSE = {
     'length': 2,
-    'baseurl': 'uuid://127.0.0.1:8000/',
     'threshold': {
         'basic': 2,
         'advanced': 18,
@@ -43,7 +42,9 @@ SOC_LICENSE = {
             'line1': 'Diploma Certificate',
             'line2': 'This certify that',
             'line3': 'successfully finished the internet license test',
-            'line4': 'of soc-license'
+            'line4': 'of S.O.C License',
+            'badge': 'config/images/soc-license-badge.png',
+            'brand': 'config/images/soc-license-brand.png'
         }
     }
 }
