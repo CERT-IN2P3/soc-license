@@ -148,7 +148,7 @@ class DiplomaCtrl(object):
         file.image(SOC_LICENSE['diploma']['pdf']['brand'],
                    x=15,
                    y=135,
-                   w=12)
+                   h=12)
         file.set_y(100)
         file.set_x(20)
         file.set_text_color(**COLOR['tertiary'])
