@@ -30,11 +30,11 @@ ALLOWED_HOSTS = [
 ]
 
 SOC_LICENSE = {
-    'length': 2,
+    'length': 3,
     'threshold': {
         'basic': 2,
-        'advanced': 18,
-        'expert': 20
+        'advanced': 4,
+        'expert': 6
     },
     'diploma': {
         'basedir': BASE_DIR / "data/diplomas",
