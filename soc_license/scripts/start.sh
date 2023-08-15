@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if ! [[ -f $PWD/data/db.sqlite3 ]] ;
+if [[ ! -f $PWD/data/db.sqlite3 ]] ;
 then
   python manage.py migrate
   python manage.py loaddata $PWD/../tools/initial-data.json
