@@ -94,7 +94,7 @@ class DiplomaCtrl(object):
         file.image(SOC_LICENSE['diploma']['pdf']['brand'],  # add logo
                    x=15,
                    y=135,
-                   h=12)
+                   h=10)
 
         # diploma title
         file.set_font('helvetica', size=50)
@@ -174,14 +174,17 @@ class DiplomaCtrl(object):
         qrcode_filename = '{basedir}/{uuid}.png'.format(basedir=SOC_LICENSE['diploma']['basedir'],
                                                         uuid=self.uuid)
         qrcode.save(qrcode_filename)
-        file.image(qrcode_filename, x=160, y=95, w=35)
-        file.link(x=160, y=95, w=35, h=35, link=link)
+        file.image(qrcode_filename, x=160, y=95, w=35, link=link)
 
         # uuid value
+        file.set_y(140)
+        file.set_x(140)
+        file.cell(txt="{uuid}".format(uuid=self.uuid))
+
+        # generated at
         file.set_y(135)
-        file.set_x(150)
-        file.cell(txt="{pdfname}".format(pdfname=self.uuid),
-                  h=8)
+        file.set_x(138)
+        file.cell(txt='Generated @ {date}'.format(date=datetime.now()))
         file.output("{basedir}/{uuid}.pdf".format(basedir=SOC_LICENSE['diploma']['basedir'],
                                                   uuid=self.uuid))
         with open('{basedir}/{uuid}.pdf'.format(
@@ -205,7 +208,13 @@ class DiplomaCtrl(object):
             uuid=self.uuid,
             data=urllib.parse.quote(json.dumps(data))
         )
-        return link, qrcode.make(link)
+        qr = qrcode.QRCode()
+        qr.add_data(link)
+        qr.make(fit=True)
+        image = qr.make_image(fill_color=(COLOR['tertiary']['r'],
+                                          COLOR['tertiary']['b'],
+                                          COLOR['tertiary']['g']))
+        return link, image
 
     def sha512sum(self):
         pass
