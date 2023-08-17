@@ -30,6 +30,7 @@ ALLOWED_HOSTS = [
 ]
 
 SOC_LICENSE = {
+    'baseurl': 'http://127.0.0.1:8000',
     'length': 3,
     'threshold': {
         'basic': 2,

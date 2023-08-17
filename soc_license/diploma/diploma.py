@@ -3,11 +3,12 @@ from datetime import datetime
 from fpdf import FPDF
 from diploma.models import Diploma
 from soc_license.settings import SOC_LICENSE
-import hashlib
+import qrcode
 import base64
 import rsa
 import json
 import os
+import urllib.parse
 
 COLOR = {
     'primary': {
@@ -78,9 +79,24 @@ class DiplomaCtrl(object):
             return self.pdf(certificate)
 
     def pdf(self, certificate):
+        # we initialize pdf
         file = FPDF(orientation='L', unit='mm', format='A5')
         file.set_margin(0)
         file.add_page()
+        file.line(15, 15, 195, 15)  # header line
+        file.line(15, 133, 195, 133)  # footer line
+
+        # file.image(SOC_LICENSE['diploma']['pdf']['badge'],  # add certified badge
+        #            x=150,
+        #            y=95,
+        #            w=25)
+
+        file.image(SOC_LICENSE['diploma']['pdf']['brand'],  # add logo
+                   x=15,
+                   y=135,
+                   h=12)
+
+        # diploma title
         file.set_font('helvetica', size=50)
         file.set_text_color(**COLOR['primary'])
         file.set_x(0)
@@ -91,6 +107,8 @@ class DiplomaCtrl(object):
                   w=0,
                   h=50,
                   align='C')
+
+        # diploma text header
         file.set_font('helvetica', size=10)
         file.set_text_color(**COLOR['secondary'])
         file.cell(txt=SOC_LICENSE['diploma']['pdf']['line2'],
@@ -98,6 +116,8 @@ class DiplomaCtrl(object):
                   new_x="LMARGIN",
                   w=0,
                   align='C')
+
+        # diploma firstname lastname
         file.set_font('helvetica', size=35)
         file.set_text_color(**COLOR['primary'])
         file.cell(txt="{firstname} {lastname}".format(firstname=certificate['firstname'],
@@ -106,6 +126,8 @@ class DiplomaCtrl(object):
                   new_x="LMARGIN",
                   w=0,
                   align='C')
+
+        # diploma text footer
         file.set_font('helvetica', size=10)
         file.set_text_color(**COLOR['secondary'])
         file.cell(txt=SOC_LICENSE['diploma']['pdf']['line3'],
@@ -118,46 +140,48 @@ class DiplomaCtrl(object):
                   new_x="LMARGIN",
                   w=0,
                   align='C')
-        file.set_y(95)
-        file.set_x(170)
+
+        # date for certificate
+        file.set_y(90)
+        file.set_x(160)
         file.set_text_color(**COLOR['tertiary'])
         file.cell(txt="Date : {date}".format(date=certificate['date']),
                   new_y="NEXT",
                   new_x="LMARGIN",
                   align='C')
-        file.set_y(95)
+
+        # signature
+        file.set_y(90)
         file.set_x(20)
         file.set_text_color(**COLOR['tertiary'])
         file.cell(txt="Signature",
                   new_y="NEXT",
                   new_x="LMARGIN",
                   align='C')
-        file.set_font('helvetica', size=6)
-        file.image(SOC_LICENSE['diploma']['pdf']['badge'],
-                   x=150,
-                   y=95,
-                   w=25)
-        file.set_y(135)
-        file.set_x(150)
-        file.cell(txt="{pdfname}".format(pdfname=self.uuid),
-                  h=8)
-        file.line(15, 15, 195, 15)
-        file.line(15, 133, 195, 133)
-        file.set_y(-25)
-        file.set_x(0)
-        file.image(SOC_LICENSE['diploma']['pdf']['brand'],
-                   x=15,
-                   y=135,
-                   h=12)
-        file.set_y(100)
+        file.set_font('helvetica', size=8)
+        file.set_y(95)
         file.set_x(20)
         file.set_text_color(**COLOR['tertiary'])
         file.multi_cell(txt=str(self.signature),
                         new_y="NEXT",
                         new_x="LMARGIN",
-                        w=50,
+                        w=60,
                         border=0,
                         align='L')
+
+        # qrcode
+        link, qrcode = self.url()
+        qrcode_filename = '{basedir}/{uuid}.png'.format(basedir=SOC_LICENSE['diploma']['basedir'],
+                                                        uuid=self.uuid)
+        qrcode.save(qrcode_filename)
+        file.image(qrcode_filename, x=160, y=95, w=35)
+        file.link(x=160, y=95, w=35, h=35, link=link)
+
+        # uuid value
+        file.set_y(135)
+        file.set_x(150)
+        file.cell(txt="{pdfname}".format(pdfname=self.uuid),
+                  h=8)
         file.output("{basedir}/{uuid}.pdf".format(basedir=SOC_LICENSE['diploma']['basedir'],
                                                   uuid=self.uuid))
         with open('{basedir}/{uuid}.pdf'.format(
@@ -167,7 +191,21 @@ class DiplomaCtrl(object):
             filename.close()
             os.unlink('{basedir}/{uuid}.pdf'.format(basedir=SOC_LICENSE['diploma']['basedir'],
                                                     uuid=self.uuid))
+            os.unlink('{basedir}/{uuid}.png'.format(basedir=SOC_LICENSE['diploma']['basedir'],
+                                                    uuid=self.uuid))
         return result
+
+    def url(self):
+        data = {
+            'uuid': self.uuid,
+            'signature': self.signature
+        }
+        link = '{baseurl}/diplomas/{uuid}.pdf?data={data}'.format(
+            baseurl=SOC_LICENSE['baseurl'],
+            uuid=self.uuid,
+            data=urllib.parse.quote(json.dumps(data))
+        )
+        return link, qrcode.make(link)
 
     def sha512sum(self):
         pass

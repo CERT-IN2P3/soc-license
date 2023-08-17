@@ -15,7 +15,6 @@ def diploma_view(request, uuid, format):
     if request.method == 'GET':
         if 'data' in request.GET:
             data = json.loads(request.GET['data'])
-            print('diploma_view()\n    data: {}'.format(data))
         elif request.body.decode('utf-8') != '':
             data = json.loads(request.body)
         else:
