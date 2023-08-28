@@ -21,4 +21,3 @@ jobs:
         username: "guillaume-philippon"
         password: ${{ secrets.PAT }}
         repository: cert-in2p3/soc-license
-        tags: {{date 'YYYYMMDD-HHmmss' tz='Asia/Tokyo'}}
